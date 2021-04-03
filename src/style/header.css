@@ -1,0 +1,14 @@
+.header-container {
+  width: 25vw;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.header-container h1 {
+  text-align: center;
+}
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+}
