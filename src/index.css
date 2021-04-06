@@ -1,6 +1,10 @@
 @font-face {
 font-family: "Petit Formal Script";
 src:local('Petit Formal Script'), url('fonts/PetitFormalScript-Regular.ttf') format('truetype');
+font-family: "Train One";
+src:local('Train One'), url('fonts/TrainOne-Regular.ttf');
+font-family: "Acme";
+src:local('Acme'), url('fonts/Acme-Regular.ttf');
 }
 body {
   margin: 0;

@@ -1,3 +1,4 @@
+import React, {useState} from 'react';
 import logo from './logo.svg';
 import './App.css';
 import {Header} from './components/Header';
@@ -6,14 +7,27 @@ import {Home} from './components/Home';
 import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
 import {Pieces} from './components/Pieces';
 import {Contact} from './components/Contact';
+import {Modal} from './components/Modal';
 import Button from '@material-ui/core/Button';
 
 export default function App() {
+  const [modal, showModal] = useState(false);
+  const [children, setChildren] = useState([]);
+
+  const seeModal = () => showModal(true);
+  const closeModal = () => showModal(false);
+
   return (
     <div className="root-container">
+    {
+    modal ? <Modal closeModal={() => closeModal()} show={modal}>
+    <h2>modal</h2>
+    </Modal>
+    : <Button onClick={() => seeModal()}>Show Modal</Button>
+    }
     <Router>
     <nav className="header-container">
-      <h1>Cool Logo</h1>
+      <h1>Heart Harbor</h1>
       <ul className="top-bar">
         <Button><Link to="/">Home</Link></Button>
         <Button><Link to="/pieces">Pieces</Link></Button>
@@ -22,7 +36,7 @@ export default function App() {
     </nav>
     <Switch>
     <Route path="/" exact component={Home} />
-    <Route path="/pieces" exact component={Pieces} />
+    <Route path="/pieces" exact component={() => (<Pieces setChildren={setChildren}/>)} />
     <Route path="/contact" exact component={Contact} />
     </Switch>
     </Router>

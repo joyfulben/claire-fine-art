@@ -12,3 +12,9 @@
   display: flex;
   justify-content: space-between;
 }
+.top-bar a {
+  text-decoration: none;
+}
+.top-bar a:active {
+  color: blue;
+}
