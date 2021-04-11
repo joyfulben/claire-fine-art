@@ -14,16 +14,16 @@ const Pieces = ({setChildren, seeModal}) => {
     seeModal();
     setChildren(<img src={src} alt="modal pic"/>);
   }
-  console.log(width);
-  const checkScreenWidth = () => {
 
-    if (width < breakPoint) setClass("medium-pieces-container")
-    else setClass("pieces-container")
+  const checkScreenWidth = () => {
+    console.log(parseInt(width));
+    if (parseInt(width) < breakPoint) {setClass("medium-pieces-container")}
+    else {setClass("pieces-container")}
   }
+
   useEffect(() => {
-    window.addEventListener("resize", () => setWidth(window.screen.width));
-    checkScreenWidth();
-  }, []);
+    window.addEventListener("resize", () => { setWidth(window.screen.width)}); checkScreenWidth()
+  }, [width]);
 
   return (
     <div className="gallery-container">
