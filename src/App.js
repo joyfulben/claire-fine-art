@@ -19,28 +19,29 @@ export default function App() {
 
   return (
     <div className="root-container">
-    {
-    modal ? <Modal closeModal={() => closeModal()} show={modal}>
-    <h2>modal</h2>
-    </Modal>
-    : <Button onClick={() => seeModal()}>Show Modal</Button>
-    }
+
     <Router>
     <nav className="header-container">
       <h1>Heart Harbor</h1>
       <ul className="top-bar">
-        <Button><Link to="/">Home</Link></Button>
-        <Button><Link to="/pieces">Pieces</Link></Button>
-        <Button><Link to="/contact">Contact</Link></Button>
+        <Link to="/"><Button>Home</Button></Link>
+        <Link to="/pieces"><Button>Pieces</Button></Link>
+        <Link to="/contact"><Button>Contact</Button></Link>
       </ul>
     </nav>
     <Switch>
     <Route path="/" exact component={Home} />
-    <Route path="/pieces" exact component={() => (<Pieces setChildren={setChildren}/>)} />
+    <Route path="/pieces" exact component={() => (<Pieces setChildren={setChildren} seeModal={() => seeModal()}/>)} />
     <Route path="/contact" exact component={Contact} />
     </Switch>
     </Router>
-
+    {
+    modal ? <Modal closeModal={() => closeModal()} show={modal}>
+    {children}
+    </Modal>
+    :
+    <Button onClick={seeModal}>See Modal</Button>
+    }
     </div>
   );
 }

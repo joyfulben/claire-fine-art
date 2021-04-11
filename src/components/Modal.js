@@ -6,12 +6,9 @@ const Modal = ({ closeModal, show, children }) => {
   const showHideClassName = show ? "modal display-block" : "modal display-none";
 
   return (
-    <div className={showHideClassName}>
-      <section className="modal-main">
+    <div onClick={() => closeModal()} className={showHideClassName}>
+      <section className="modal-main" onClick={() => !closeModal()}>
         {children}
-        <button type="button" onClick={() => closeModal()}>
-          Close
-        </button>
       </section>
     </div>
   );

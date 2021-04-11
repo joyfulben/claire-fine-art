@@ -13,7 +13,7 @@ const DetailButton = withStyles({
     color: 'white',
     fontSize: '25px',
     fontFamily: 'Acme',
-    zIndex: '-1',
+    boxShadow: '0 0 10px black',
     '&:hover': {
         backgroundColor: 'rgba(100, 224, 236, 0.7)',
         boxShadow: 'none',

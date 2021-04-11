@@ -91,34 +91,102 @@ const ArtRepo = {
       title: "Shell Layers",
       medium: "Acrylic",
       price: 50,
+      partials: [
+        { src: shellLayersPartial1 },
+        { src: shellLayersPartial2 }
+      ]
     },
     {
-      // shellLayersPartial1,
-    // shellLayersPartial2,
-    // orangeFishFull,
-    // orangeFishCloseup1,
-    // orangeFishCloseup2,
-    // blueFishFull,
-    // blueFishPartial,
-    // circleClumpTrees,
-    // clamDisco,
-    // buddhaWithinFull,
-    // buddhaWithinPartial,
-    // redPoppies,
-    // redPoppiesPartial,
-    // lotsOLotus,
-    // lotusLifeCycle,
-    // mossWaterPixels,
-    // mossWaterPixelsClose1,
-    // mossWaterPixelsClose2,
-    // mossWaterPixelsGallery,
-    // lotusHeartMountain,
-    // blueDanTien,
-    // celloDan
-  }
+      src: orangeFishFull,
+      title: "Orange Fish",
+      medium: "Acrylic",
+      price: 80,
+      partials: [
+        { src: orangeFishCloseup1 },
+        { src: orangeFishCloseup2 }
+      ]
+    },
+    {
+      src: blueFishFull,
+      title: "Blue Fish",
+      medium: "Acrylic",
+      price: 100,
+      partials: [
+        {src: blueFishPartial}
+      ]
+    },
+    {
+      src: circleClumpTrees,
+      title: "Circle Clump Trees",
+      medium: "Acrylic and Discs",
+      price: 120
+    },
+    {
+      src: clamDisco,
+      title: "Clam Disco",
+      medium: "Acrylic",
+      price: 75
+    },
+    {
+      src: buddhaWithinFull,
+      title: "Buddha Within",
+      medium: "Acrylic",
+      price: 150,
+      partials: [
+        { src: buddhaWithinPartial }
+      ]
+    },
+    {
+      src: redPoppies,
+      title: "Red Poppies",
+      medium: "Acrylic",
+      price: 80,
+      partials: [
+        { src: redPoppiesPartial }
+      ]
+    },
+    {
+      src: lotsOLotus,
+      title: "Lots \'O Lotus",
+      medium: "Acrylic",
+      price: 180
+    },
+    {
+      src: lotusLifeCycle,
+      title: "Lotus Life Cycle",
+      medium: "Acrylic",
+      price: 140
+    },
+    {
+      src: mossWaterPixels,
+      title: "Moss & Water Pixels",
+      medium: "Acrylic",
+      price: 320,
+      partials: [
+        { src: mossWaterPixelsClose1 },
+        { src: mossWaterPixelsClose2 },
+        { src: mossWaterPixelsGallery }
+      ]
+    },
+    {
+      src: lotusHeartMountain,
+      title: "Lotus Heart Mountain",
+      medium: "Acrylic",
+      price: 220
+    },
+    {
+      src: blueDanTien,
+      title: "Blue Dan Tien",
+      medium: "Acrylic",
+      price: 175
+    },
+    {
+      src: celloDan,
+      title: "Cello Dan",
+      medium: "Acrylic",
+      price: 185
+    }
   ]
 }
-
-
 
 export {ArtRepo};
