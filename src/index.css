@@ -5,6 +5,9 @@ font-family: "Train One";
 src:local('Train One'), url('fonts/TrainOne-Regular.ttf');
 font-family: "Acme";
 src:local('Acme'), url('fonts/Acme-Regular.ttf');
+font-family: "AmaticSC";
+src:local('AmaticSC'), url('fonts/AmaticSC-Regular.ttf', 'fonts/AmaticSC-Bold.ttf');
+
 }
 body {
   margin: 0;

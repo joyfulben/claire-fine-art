@@ -1,5 +1,6 @@
 import React from "react";
 import { useParams } from "react-router-dom";
+import '../style/piece.css';
 
 const Piece = ({ data }) => {
   console.log("Piece component loaded");
@@ -8,11 +9,17 @@ const Piece = ({ data }) => {
   let pieceData;
   if (piece) {
     pieceData = (
-      <div>
-        <h3> {piece.title} </h3>
+      <div className="piece-container">
+
         <img src={piece.src} />
-        <hr />
-        <h2>${piece.price}</h2>
+        <div className="title-price-container">
+          <h1> {piece.title} </h1>
+          <hr />
+          <h2>
+          {piece.medium}</h2>
+          <hr />
+          <h2>${piece.price}</h2>
+        </div>
       </div>
     );
   } else {
