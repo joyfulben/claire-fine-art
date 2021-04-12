@@ -87,6 +87,7 @@ const ArtRepo = {
   ],
   mixed: [
     {
+      id: 1,
       src: shellLayersFullHorizontal,
       title: "Shell Layers",
       medium: "Acrylic",
@@ -97,6 +98,7 @@ const ArtRepo = {
       ]
     },
     {
+      id: 2,
       src: orangeFishFull,
       title: "Orange Fish",
       medium: "Acrylic",
@@ -107,6 +109,7 @@ const ArtRepo = {
       ]
     },
     {
+      id: 3,
       src: blueFishFull,
       title: "Blue Fish",
       medium: "Acrylic",
@@ -116,18 +119,21 @@ const ArtRepo = {
       ]
     },
     {
+      id: 4,
       src: circleClumpTrees,
       title: "Circle Clump Trees",
       medium: "Acrylic and Discs",
       price: 120
     },
     {
+      id: 5,
       src: clamDisco,
       title: "Clam Disco",
       medium: "Acrylic",
       price: 75
     },
     {
+      id: 6,
       src: buddhaWithinFull,
       title: "Buddha Within",
       medium: "Acrylic",
@@ -137,6 +143,7 @@ const ArtRepo = {
       ]
     },
     {
+      id: 7,
       src: redPoppies,
       title: "Red Poppies",
       medium: "Acrylic",
@@ -146,18 +153,21 @@ const ArtRepo = {
       ]
     },
     {
+      id: 9,
       src: lotsOLotus,
       title: "Lots \'O Lotus",
       medium: "Acrylic",
       price: 180
     },
     {
+      id: 10,
       src: lotusLifeCycle,
       title: "Lotus Life Cycle",
       medium: "Acrylic",
       price: 140
     },
     {
+      id: 11,
       src: mossWaterPixels,
       title: "Moss & Water Pixels",
       medium: "Acrylic",
@@ -169,18 +179,21 @@ const ArtRepo = {
       ]
     },
     {
+      id: 12,
       src: lotusHeartMountain,
       title: "Lotus Heart Mountain",
       medium: "Acrylic",
       price: 220
     },
     {
+      id: 13,
       src: blueDanTien,
       title: "Blue Dan Tien",
       medium: "Acrylic",
       price: 175
     },
     {
+      id: 14,
       src: celloDan,
       title: "Cello Dan",
       medium: "Acrylic",

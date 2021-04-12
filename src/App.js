@@ -9,6 +9,8 @@ import {Pieces} from './components/Pieces';
 import {Contact} from './components/Contact';
 import {Modal} from './components/Modal';
 import Button from '@material-ui/core/Button';
+import {ArtRepo} from './style/assets/ArtRepo';
+import Piece from './components/Piece';
 
 export default function App() {
   const [modal, showModal] = useState(false);
@@ -33,6 +35,7 @@ export default function App() {
     <Route path="/" exact component={Home} />
     <Route path="/pieces" exact component={() => (<Pieces setChildren={setChildren} seeModal={() => seeModal()}/>)} />
     <Route path="/contact" exact component={Contact} />
+    <Route path={`/:pieceId`} component={() => (<Piece data={ArtRepo.mixed} />)} />
     </Switch>
     </Router>
     {

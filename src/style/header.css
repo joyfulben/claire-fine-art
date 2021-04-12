@@ -11,6 +11,7 @@
 .top-bar {
   display: flex;
   justify-content: space-between;
+  padding: 0;
 }
 .top-bar a {
   text-decoration: none;

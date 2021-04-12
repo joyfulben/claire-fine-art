@@ -1,12 +1,14 @@
 import React, {useState, useEffect} from 'react';
+import { Link, Route, useRouteMatch } from 'react-router-dom';
 import '../style/pieces.css';
 import {ArtRepo} from '../style/assets/ArtRepo';
 import Button from '@material-ui/core/Button';
 import DetailsButton from '../style/DetailsButton';
+import Piece from './Piece';
 
 
 const Pieces = ({setChildren, seeModal}) => {
-
+  const { url } = useRouteMatch();
   const [screenWidthClass, setClass] = useState('');
   const [width, setWidth] = useState(window.screen.width);
   const breakPoint = 1230;
@@ -16,7 +18,6 @@ const Pieces = ({setChildren, seeModal}) => {
   }
 
   const checkScreenWidth = () => {
-    console.log(parseInt(width));
     if (parseInt(width) < breakPoint) {setClass("medium-pieces-container")}
     else {setClass("pieces-container")}
   }
@@ -29,16 +30,19 @@ const Pieces = ({setChildren, seeModal}) => {
     <div className="gallery-container">
       <h2 className="type-headline">Mixed Media</h2>
       <div className={screenWidthClass}>
-      {ArtRepo.mixed.map((url, i) => {
+      {ArtRepo.mixed.map((piece, i) => {
         return (
-          <div className="gallery-piece" >
-            <img onClick={() => handlePicClick(url.src)} src={url.src} alt={`piece ${i}`} loading="lazy" />
-            <DetailsButton className="details-button">Details</DetailsButton>
+          <div key={i} className="gallery-piece" >
+            <img onClick={() => handlePicClick(piece.src)} src={piece.src} alt={`piece ${i}`} loading="lazy" />
+            <Link to={`/${piece.id}`}><DetailsButton className="details-button">Details</DetailsButton></Link>
           </div>
-        )
+        );
       }
-      )}
+    )};
       </div>
+
+
+
     </div>
   )
 }
