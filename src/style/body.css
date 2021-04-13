@@ -25,13 +25,16 @@
   z-index: 2;
   overflow:inherit;
 }
-.card-container {
+.store-categories a {
   width: 32%;
   display: flex;
   max-height: 900px;
   position: relative;
   overflow: hidden;
 
+}
+.card-container {
+  width: 100%;
 }
 
 .encaustics {

@@ -38,6 +38,8 @@ export default function App() {
     <Route path="/" exact component={Home} />
     <Route path="/pieces" exact component={() => (<Pieces setChildren={setChildren} seeModal={() => seeModal()} childData={[ArtRepo.encaustics, ArtRepo.prints, ArtRepo.mixed]}/>)} />
     <Route path="/pieces/encaustics" exact component={() => (<Pieces setChildren={setChildren} seeModal={() => seeModal()} childData={[ArtRepo.encaustics]} type="Encaustics"/>)} />
+    <Route path="/pieces/prints" exact component={() => (<Pieces setChildren={setChildren} seeModal={() => seeModal()} childData={[ArtRepo.prints]} type="Prints"/>)} />
+    <Route path="/pieces/mixed" exact component={() => (<Pieces setChildren={setChildren} seeModal={() => seeModal()} childData={[ArtRepo.mixed]} type="Mixed"/>)} />
 
     <Route path="/contact" exact component={Contact} />
     <Route path={`/:pieceId`} component={() => (<Piece data={children} />)} />

@@ -16,7 +16,8 @@ const Pieces = ({setChildren, seeModal, childData, type}) => {
     childData[0].map(piece => {
       piecesArr.push(piece)
     })
-    if (childData.length) {
+    console.log(childData.length);
+    if (childData.length > 1) {
       childData[1].map(piece => {
         piecesArr.push(piece)
       });
