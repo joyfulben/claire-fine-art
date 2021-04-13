@@ -9,9 +9,7 @@ const Home = () => {
   return (
     <div className="home">
       <Body />
-      <footer>
-        This area is for the footer
-      </footer>
+      
     </div>
   )
 };

@@ -4,6 +4,18 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
+  align-items: center;
+}
+.site-logo {
+  height: 250px;
+  width: 250px;
+}
+.logo-background {
+  position: absolute;
+  top: 95px;
+  width:247px;
+  height: 152px;
+  z-index: -1;
 }
 .header-container h1 {
   text-align: center;

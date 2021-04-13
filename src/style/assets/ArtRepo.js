@@ -53,153 +53,319 @@ import whaleSky from './art-pics/whale_sky.png';
 import whaleSkyBlue from './art-pics/whale_sky_blue.png';
 
 const ArtRepo = {
-  encaustics: [
-    drippingHair,
-    drippingHairPartial,
-    tripleBlueEncausticPartial,
-    tripleBlueEncausticGallery,
-    manyBranches
-  ],
-  prints: [
-    whaleSky,
-    whaleSkyBlue,
-    gopherASnuggle,
-    acornInHeart,
-    cephalopod,
-    cagedCrow,
-    whereHaveYouBean,
-    youOctopi,
-    youAreHereOrange,
-    squidRelationship,
-    bloodyStocking,
-    personSittingInHeart,
-    octopusOverHeart,
-    shellfishlyOrange,
-    bunniesRedSky,
-    flatironPoppies,
-    yellowUnderCanopy,
-    heartacheDecompartmentalized,
-    thornWrappedComfort,
-    shipCthuluWaves,
-    snailFreedom,
-    fishyCubism,
-    samuraiDogJoy
-  ],
-  mixed: [
-    {
-      id: 1,
-      src: shellLayersFullHorizontal,
-      title: "Shell Layers",
-      medium: "Acrylic",
-      price: 50,
-      partials: [
-        { src: shellLayersPartial1 },
-        { src: shellLayersPartial2 }
-      ]
-    },
-    {
-      id: 2,
-      src: orangeFishFull,
-      title: "Orange Fish",
-      medium: "Acrylic",
-      price: 80,
-      partials: [
-        { src: orangeFishCloseup1 },
-        { src: orangeFishCloseup2 }
-      ]
-    },
-    {
-      id: 3,
-      src: blueFishFull,
-      title: "Blue Fish",
-      medium: "Acrylic",
-      price: 100,
-      partials: [
-        {src: blueFishPartial}
-      ]
-    },
-    {
-      id: 4,
-      src: circleClumpTrees,
-      title: "Circle Clump Trees",
-      medium: "Acrylic and Discs",
-      price: 120
-    },
-    {
-      id: 5,
-      src: clamDisco,
-      title: "Clam Disco",
-      medium: "Acrylic",
-      price: 75
-    },
-    {
-      id: 6,
-      src: buddhaWithinFull,
-      title: "Buddha Within",
-      medium: "Acrylic",
-      price: 150,
-      partials: [
-        { src: buddhaWithinPartial }
-      ]
-    },
-    {
-      id: 7,
-      src: redPoppies,
-      title: "Red Poppies",
-      medium: "Acrylic",
-      price: 80,
-      partials: [
-        { src: redPoppiesPartial }
-      ]
-    },
-    {
-      id: 9,
-      src: lotsOLotus,
-      title: "Lots \'O Lotus",
-      medium: "Acrylic",
-      price: 180
-    },
-    {
-      id: 10,
-      src: lotusLifeCycle,
-      title: "Lotus Life Cycle",
-      medium: "Acrylic",
-      price: 140
-    },
-    {
-      id: 11,
-      src: mossWaterPixels,
-      title: "Moss & Water Pixels",
-      medium: "Acrylic",
-      price: 320,
-      partials: [
-        { src: mossWaterPixelsClose1 },
-        { src: mossWaterPixelsClose2 },
-        { src: mossWaterPixelsGallery }
-      ]
-    },
-    {
-      id: 12,
-      src: lotusHeartMountain,
-      title: "Lotus Heart Mountain",
-      medium: "Acrylic",
-      price: 220
-    },
-    {
-      id: 13,
-      src: blueDanTien,
-      title: "Blue Dan Tien",
-      medium: "Acrylic",
-      price: 175
-    },
-    {
-      id: 14,
-      src: celloDan,
-      title: "Cello Dan",
-      medium: "Acrylic",
-      price: 185
-    }
-  ]
-}
+    encaustics: [
+      {
+        id: 201,
+        src: drippingHair,
+        title: "Dripping Hair",
+        medium: "Encaustic",
+        price: 4220,
+        partials: [
+          { src: drippingHairPartial }
+        ]
+      },
+      {
+        id: 202,
+        src: tripleBlueEncausticGallery,
+        title: "Triple Blue",
+        medium: "Encaustic",
+        price: 1520,
+        partials: [
+          { src: tripleBlueEncausticPartial }
+        ]
+      },
+      {
+        id: 203,
+        src: manyBranches,
+        title: "Many Branches",
+        medium: "Encaustic",
+        price: 2354
+      }
+    ],
+    prints: [
+      {
+        id: 101,
+        src: whaleSky,
+        title: "Whale Sky",
+        medium: "Print",
+        price: 1220,
+        partials: [
+          { src: whaleSkyBlue }
+        ]
+      },
+      {
+        id: 102,
+        src: gopherASnuggle,
+        title: "I Could Gopher A Snuggle!",
+        medium: "Print",
+        price: 1220
+      },
+      {
+        id: 103,
+        src: acornInHeart,
+        title: "Acorn In Heart",
+        medium: "Print",
+        price: 1450
+      },
+      {
+        id: 104,
+        src: cephalopod,
+        title: "Cephalopod",
+        medium: "Print",
+        price: 1870
+      },
+      {
+        id: 105,
+        src: cagedCrow,
+        title: "Caged Crow",
+        medium: "Print",
+        price: 1400
+      },
+      {
+        id: 106,
+        src: whereHaveYouBean,
+        title: "Where Have You Bean?",
+        medium: "Print",
+        price: 820
+      },
+      {
+        id: 107,
+        src: youOctopi,
+        title: "You Octopi My Heart",
+        medium: "Print",
+        price: 2220
+      },
+      {
+        id: 108,
+        src: youAreHereOrange,
+        title: "You Are Here",
+        medium: "Print",
+        price: 1250
+      },
+      {
+        id: 109,
+        src: squidRelationship,
+        title: "Squid Relationship",
+        medium: "Print",
+        price: 1120
+      },
+      {
+        id: 110,
+        src: bloodyStocking,
+        title: "Bloody Stocking",
+        medium: "Print",
+        price: 720
+      },
+      {
+        id: 111,
+        src: personSittingInHeart,
+        title: "Sitting In Heart",
+        medium: "Print",
+        price: 1370
+      },
+      {
+        id: 112,
+        src: octopusOverHeart,
+        title: "Octopus Heart",
+        medium: "Print",
+        price: 1920
+      },
+      {
+        id: 113,
+        src: shellfishlyOrange,
+        title: "Shellfishly Yours",
+        medium: "Print",
+        price: 1110
+      },
+      {
+        id: 114,
+        src: bunniesRedSky,
+        title: "Bunnies Red Sky",
+        medium: "Print",
+        price: 1436
+      },
+      {
+        id: 115,
+        src: flatironPoppies,
+        title: "Poppies",
+        medium: "Print",
+        price: 1980
+      },
+      {
+        id: 116,
+        src: yellowUnderCanopy,
+        title: "Yellow Under Canopy",
+        medium: "Print",
+        price: 520
+      },
+      {
+        id: 117,
+        src: heartacheDecompartmentalized,
+        title: "Heartache Decompartmentalized",
+        medium: "Print",
+        price: 2520
+      },
+      {
+        id: 118,
+        src: whaleSky,
+        title: "Whale Sky",
+        medium: "Print",
+        price: 1220,
+        partials: [
+          { src: whaleSkyBlue }
+        ]
+      },
+      {
+        id: 119,
+        src: thornWrappedComfort,
+        title: "Thorn-wrapped Comfort",
+        medium: "Print",
+        price: 1620
+      },
+      {
+        id: 120,
+        src: shipCthuluWaves,
+        title: "Ship Cthulu",
+        medium: "Print",
+        price: 1350
+      },
+      {
+        id: 121,
+        src: snailFreedom,
+        title: "Snail Freedom",
+        medium: "Print",
+        price: 1220
+      },
+      {
+        id: 122,
+        src: fishyCubism,
+        title: "Fishy Cubism",
+        medium: "Print",
+        price: 590
+      },
+      {
+        id: 123,
+        src: samuraiDogJoy,
+        title: "Samurai Dog Joy",
+        medium: "Print",
+        price: 890
+      }
+    ],
+    mixed: [
+      {
+        id: 1,
+        src: shellLayersFullHorizontal,
+        title: "Shell Layers",
+        medium: "Acrylic",
+        price: 50,
+        partials: [
+          { src: shellLayersPartial1 },
+          { src: shellLayersPartial2 }
+        ]
+      },
+      {
+        id: 2,
+        src: orangeFishFull,
+        title: "Orange Fish",
+        medium: "Acrylic",
+        price: 80,
+        partials: [
+          { src: orangeFishCloseup1 },
+          { src: orangeFishCloseup2 }
+        ]
+      },
+      {
+        id: 3,
+        src: blueFishFull,
+        title: "Blue Fish",
+        medium: "Acrylic",
+        price: 100,
+        partials: [
+          {src: blueFishPartial}
+        ]
+      },
+      {
+        id: 4,
+        src: circleClumpTrees,
+        title: "Circle Clump Trees",
+        medium: "Acrylic and Discs",
+        price: 120
+      },
+      {
+        id: 5,
+        src: clamDisco,
+        title: "Clam Disco",
+        medium: "Acrylic",
+        price: 75
+      },
+      {
+        id: 6,
+        src: buddhaWithinFull,
+        title: "Buddha Within",
+        medium: "Acrylic",
+        price: 150,
+        partials: [
+          { src: buddhaWithinPartial }
+        ]
+      },
+      {
+        id: 7,
+        src: redPoppies,
+        title: "Red Poppies",
+        medium: "Acrylic",
+        price: 80,
+        partials: [
+          { src: redPoppiesPartial }
+        ]
+      },
+      {
+        id: 9,
+        src: lotsOLotus,
+        title: "Lots \'O Lotus",
+        medium: "Acrylic",
+        price: 180
+      },
+      {
+        id: 10,
+        src: lotusLifeCycle,
+        title: "Lotus Life Cycle",
+        medium: "Acrylic",
+        price: 140
+      },
+      {
+        id: 11,
+        src: mossWaterPixels,
+        title: "Moss & Water Pixels",
+        medium: "Acrylic",
+        price: 320,
+        partials: [
+          { src: mossWaterPixelsClose1 },
+          { src: mossWaterPixelsClose2 },
+          { src: mossWaterPixelsGallery }
+        ]
+      },
+      {
+        id: 12,
+        src: lotusHeartMountain,
+        title: "Lotus Heart Mountain",
+        medium: "Acrylic",
+        price: 220
+      },
+      {
+        id: 13,
+        src: blueDanTien,
+        title: "Blue Dan Tien",
+        medium: "Acrylic",
+        price: 175
+      },
+      {
+        id: 14,
+        src: celloDan,
+        title: "Cello Dan",
+        medium: "Acrylic",
+        price: 185
+      }
+    ]
+  };
 
 export {ArtRepo};

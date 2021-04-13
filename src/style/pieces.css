@@ -13,7 +13,9 @@
   flex-direction: column;
   justify-content: space-around;
 }
-
+.gallery-piece a {
+  text-decoration: none;
+}
 .gallery-piece img {
   height: 90%;
   max-height: 250px;
@@ -23,12 +25,11 @@
 }
 
 .pieces-container {
-  animation: fadein 2s ease-in;
+  animation: fadein 1s ease-in;
   display: grid;
   grid-template-columns: repeat(4, 2fr);
   grid-template-rows: repeat(6, 25vw);
   grid-gap: 20px;
-  animation: fadein 2s ease-in-out;
 }
 
 .medium-pieces-container {
@@ -36,7 +37,7 @@
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(6, 25vw);
   grid-gap: 20px;
-  animation: fadein 2s ease-in-out;
+  animation: fadein 1s ease-in-out;
 }
 .medium-pieces-container .gallery-piece {
   justify-content: space-between;

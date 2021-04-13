@@ -3,7 +3,7 @@ import '../style/pieces.css'
 
 const Contact = () => {
   return (
-    <div>
+    <div className="body-container">
       <h1>Brianna Claire Williamson</h1>
       <h1>Email: claire@artspace.com</h1>
     </div>

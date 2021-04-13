@@ -16,7 +16,7 @@ const DetailButton = withStyles({
     boxShadow: '0 0 10px black',
     '&:hover': {
         backgroundColor: 'rgba(100, 224, 236, 0.7)',
-        boxShadow: 'none',
+        boxShadow: '0 0 3px black',
       },
   },
   label: {

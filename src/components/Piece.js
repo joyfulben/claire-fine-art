@@ -3,22 +3,21 @@ import { useParams } from "react-router-dom";
 import '../style/piece.css';
 
 const Piece = ({ data }) => {
-  console.log("Piece component loaded");
-  const { pieceId } = useParams();
-  const piece = data.find(p => p.id === Number(pieceId));
+  console.log(data);
   let pieceData;
-  if (piece) {
+
+  if (data) {
     pieceData = (
       <div className="piece-container">
 
-        <img src={piece.src} />
+        <img src={data.src} />
         <div className="title-price-container">
-          <h1> {piece.title} </h1>
+          <h1> {data.title} </h1>
           <hr />
           <h2>
-          {piece.medium}</h2>
+          {data.medium}</h2>
           <hr />
-          <h2>${piece.price}</h2>
+          <h2>${data.price}</h2>
         </div>
       </div>
     );
