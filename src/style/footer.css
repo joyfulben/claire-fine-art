@@ -1,0 +1,17 @@
+.footer-container {
+  margin: 40px 0;
+  width: 100%;
+  display: flex;
+
+}
+.art-rights {
+  right: 40px;
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+nav {
+  display: flex;
+
+}

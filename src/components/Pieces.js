@@ -45,7 +45,8 @@ const Pieces = ({setChildren, seeModal, childData, type}) => {
   }
 
   useEffect(() => {
-    window.addEventListener("resize", () => { setWidth(window.screen.width)}); checkScreenWidth()
+    setWidth(window.screen.width);
+    checkScreenWidth()
   }, [width]);
 
   return (

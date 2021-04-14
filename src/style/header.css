@@ -6,15 +6,20 @@
   flex-direction: column;
   align-items: center;
 }
+.logo-container {
+  height: 200px;
+  width: 200px;
+}
 .site-logo {
-  height: 250px;
-  width: 250px;
+  height: 100%;
+  width: 100%;
 }
 .logo-background {
   position: absolute;
-  top: 95px;
-  width:247px;
-  height: 152px;
+  top: 78px;
+  left: 44.2%;
+  width: 192px;
+  height: 123px;
   z-index: -1;
 }
 .header-container h1 {
@@ -24,6 +29,7 @@
   display: flex;
   justify-content: space-between;
   padding: 0;
+  width: 400px;
 }
 .top-bar a {
   text-decoration: none;
