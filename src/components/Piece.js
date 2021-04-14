@@ -1,5 +1,4 @@
 import React from "react";
-import { useParams } from "react-router-dom";
 import '../style/piece.css';
 
 const Piece = ({ data }) => {
@@ -10,7 +9,7 @@ const Piece = ({ data }) => {
     pieceData = (
       <div className="piece-container">
 
-        <img src={data.src} />
+        <img src={data.src} alt={`${data.title} pic`} />
         <div className="title-price-container">
           <h1> {data.title} </h1>
           <hr />

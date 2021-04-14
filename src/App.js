@@ -1,5 +1,4 @@
 import React, {useState} from 'react';
-import logo from './logo.svg';
 import './App.css';
 import {Home} from './components/Home';
 import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';

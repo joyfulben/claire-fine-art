@@ -7,8 +7,10 @@
   align-items: center;
 }
 .logo-container {
+  display: flex;
   height: 200px;
   width: 200px;
+  justify-content: center;
 }
 .site-logo {
   height: 100%;
@@ -17,7 +19,6 @@
 .logo-background {
   position: absolute;
   top: 78px;
-  left: 44.2%;
   width: 192px;
   height: 123px;
   z-index: -1;

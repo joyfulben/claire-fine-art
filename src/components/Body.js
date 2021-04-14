@@ -1,6 +1,5 @@
-import React, {useState} from 'react';
+import React from 'react';
 import '../style/body.css';
-import { BrowserRouter as Router, Route, Link} from 'react-router-dom';
 
 const Body = () => {
   return (

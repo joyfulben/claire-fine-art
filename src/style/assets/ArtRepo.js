@@ -201,7 +201,7 @@ const ArtRepo = {
       {
         id: 117,
         src: heartacheDecompartmentalized,
-        title: "Heartache Decompartmentalized",
+        title: "Heartache",
         medium: "Print",
         price: 2520
       },

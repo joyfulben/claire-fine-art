@@ -1,34 +1,22 @@
 import React, {useState, useEffect} from 'react';
-import { Link, Route, useRouteMatch } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import '../style/pieces.css';
-import {ArtRepo} from '../style/assets/ArtRepo';
-import Button from '@material-ui/core/Button';
 import DetailsButton from '../style/DetailsButton';
-import Piece from './Piece';
-import { useParams } from "react-router-dom";
 
 
 
 const Pieces = ({setChildren, seeModal, childData, type}) => {
-  const { pieceId } = useParams();
   const piecesArr = [];
   const updateChildren = () => {
-    childData[0].map(piece => {
-      piecesArr.push(piece)
-    })
+    childData[0].map(piece => { return piecesArr.push(piece) });
     console.log(childData.length);
     if (childData.length > 1) {
-      childData[1].map(piece => {
-        piecesArr.push(piece)
-      });
-      childData[2].map(piece => {
-        piecesArr.push(piece)
-      })
+      childData[1].map(piece => { return piecesArr.push(piece) });
+      childData[2].map(piece => { return piecesArr.push(piece) });
     }
   }
   updateChildren();
 
-  const { url } = useRouteMatch();
   const [screenWidthClass, setClass] = useState('pieces-container');
   const [width, setWidth] = useState(window.screen.width);
   const breakPoint = 1230;
@@ -44,10 +32,10 @@ const Pieces = ({setChildren, seeModal, childData, type}) => {
     else {setClass("pieces-container")}
   }
 
-  useEffect(() => {
-    setWidth(window.screen.width);
-    checkScreenWidth()
-  }, [width]);
+  // useEffect(() => {
+  //   setWidth(window.screen.width);
+  //   checkScreenWidth()
+  // }, [width]);
 
   return (
     <div className="gallery-container">

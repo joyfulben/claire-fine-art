@@ -1,7 +1,5 @@
-import React, { useState } from 'react';
-import {Header} from './Header';
+import React from 'react';
 import {Body} from './Body';
-import {Modal} from './Modal';
 
 const Home = () => {
 
@@ -9,7 +7,7 @@ const Home = () => {
   return (
     <div className="home">
       <Body />
-      
+
     </div>
   )
 };
