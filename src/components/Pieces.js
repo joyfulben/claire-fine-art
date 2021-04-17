@@ -1,15 +1,15 @@
-import React, {useState, useEffect} from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import '../style/pieces.css';
 import DetailsButton from '../style/DetailsButton';
 
 
 
-const Pieces = ({setChildren, seeModal, childData, type}) => {
+const Pieces = ({setChildren, seeModal, childData, type, darkMode, styles}) => {
   const piecesArr = [];
   const updateChildren = () => {
     childData[0].map(piece => { return piecesArr.push(piece) });
-    console.log(childData.length);
+
     if (childData.length > 1) {
       childData[1].map(piece => { return piecesArr.push(piece) });
       childData[2].map(piece => { return piecesArr.push(piece) });
@@ -18,7 +18,6 @@ const Pieces = ({setChildren, seeModal, childData, type}) => {
   updateChildren();
 
   const [screenWidthClass, setClass] = useState('pieces-container');
-  const [width, setWidth] = useState(window.screen.width);
   const breakPoint = 1230;
 
   const handlePicClick = (src) => {
@@ -27,11 +26,13 @@ const Pieces = ({setChildren, seeModal, childData, type}) => {
   }
 
 
-  const checkScreenWidth = () => {
-    if (parseInt(width) < breakPoint) {setClass("medium-pieces-container")}
-    else {setClass("pieces-container")}
+  const darkie = () => {
+    if (darkMode) {
+      return (styles.detailsButton);
+    } else {
+      return ({});
+    }
   }
-
   // useEffect(() => {
   //   setWidth(window.screen.width);
   //   checkScreenWidth()

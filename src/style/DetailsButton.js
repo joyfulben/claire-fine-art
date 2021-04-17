@@ -10,13 +10,15 @@ const DetailButton = withStyles({
     height: '50px',
     width: '50%',
     margin: '0 25%',
-    color: 'white',
+    color: 'rgba(0, 26, 199, 0.57)',
     fontSize: '25px',
     fontFamily: 'Acme',
     boxShadow: '0 0 10px black',
     '&:hover': {
+        transition: 'all 1s',
         backgroundColor: 'rgba(100, 224, 236, 0.7)',
         boxShadow: '0 0 3px black',
+        color: 'white'
       },
   },
   label: {

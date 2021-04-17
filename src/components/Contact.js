@@ -18,16 +18,9 @@ const Contact = () => {
   }
 
   return (
-    <div className="body-container">
-      <h1>Brianna Claire Williamson</h1>
-      <h1>Email: claire@artspace.com</h1>
-      <TextFields />
-      {// <form action={`mailto:benfishernow@gmail.com?subject=${title}&body=${body}`} method="get" encType="application/x-www-form-urlencoded">
-      // <input onChange={value => handleChange(value)} type="text" name="title" />
-      // <textarea onChange={value=> handleChange(value)} name="body"></textarea>
-      // <button onClick={() => console.log(body)} type="submit">Submit email</button>
-      // </form>
-    }
+    <div className="contact-container">
+      <h2>Contact Form</h2>
+      <TextFields handleChange={handleChange} body={body} title={title}/>
     </div>
   )
 }

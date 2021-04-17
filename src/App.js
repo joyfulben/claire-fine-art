@@ -12,13 +12,31 @@ import {SiteLogo} from './style/assets/Logo';
 import Footer from './components/Footer';
 import './style/header.css';
 
+const styles = {
+
+  main: {
+    background: 'rgba(20, 20, 20, 0.83)',
+  },
+  detailsButton: {
+    background: 'rgba(24, 66, 27, 0.75)',
+    color: 'rgb(88, 148, 251)'
+  }
+}
+
 export default function App() {
   const [modal, showModal] = useState(false);
   const [children, setChildren] = useState([]);
-
+  const [darkMode, setDarkMode] = useState(false);
   const seeModal = () => showModal(true);
   const closeModal = () => showModal(false);
-  console.log(ArtRepo.encaustics);
+
+  const darkie = () => {
+    if (darkMode) {
+      return (styles.main)
+    } else {
+      return ({});
+    }
+  }
   return (
     <div className="root-container">
 
@@ -36,10 +54,10 @@ export default function App() {
     </nav>
     <Switch>
     <Route path="/" exact component={Home} />
-    <Route path="/pieces" exact component={() => (<Pieces setChildren={setChildren} seeModal={() => seeModal()} childData={[ArtRepo.encaustics, ArtRepo.prints, ArtRepo.mixed]}/>)} />
-    <Route path="/pieces/encaustics" exact component={() => (<Pieces setChildren={setChildren} seeModal={() => seeModal()} childData={[ArtRepo.encaustics]} type="Encaustics"/>)} />
-    <Route path="/pieces/prints" exact component={() => (<Pieces setChildren={setChildren} seeModal={() => seeModal()} childData={[ArtRepo.prints]} type="Prints"/>)} />
-    <Route path="/pieces/mixed" exact component={() => (<Pieces setChildren={setChildren} seeModal={() => seeModal()} childData={[ArtRepo.mixed]} type="Mixed"/>)} />
+    <Route path="/pieces" exact component={() => (<Pieces darkMode={darkMode} styles={styles} setChildren={setChildren} seeModal={() => seeModal()} childData={[ArtRepo.encaustics, ArtRepo.prints, ArtRepo.mixed]}/>)} />
+    <Route path="/pieces/encaustics" exact component={() => (<Pieces darkMode={darkMode} styles={styles} setChildren={setChildren} seeModal={() => seeModal()} childData={[ArtRepo.encaustics]} type="Encaustics"/>)} />
+    <Route path="/pieces/prints" exact component={() => (<Pieces darkMode={darkMode} styles={styles} setChildren={setChildren} seeModal={() => seeModal()} childData={[ArtRepo.prints]} type="Prints"/>)} />
+    <Route path="/pieces/mixed" exact component={() => (<Pieces darkMode={darkMode} styles={styles} setChildren={setChildren} seeModal={() => seeModal()} childData={[ArtRepo.mixed]} type="Mixed"/>)} />
 
     <Route path="/contact" exact component={Contact} />
     <Route path={`/:pieceId`} component={() => (<Piece data={children} />)} />
@@ -57,3 +75,4 @@ export default function App() {
     </div>
   );
 }
+export {styles};
