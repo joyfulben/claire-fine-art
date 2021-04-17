@@ -7,9 +7,9 @@ const Footer = () => {
     <div className="footer-container">
       <Router>
         <ul>
-          <Link to="/">Home</Link>
-          <Link to="/pieces">Pieces</Link>
-          <Link to="/contact">Contact</Link>
+          <a href="/">Home</a>
+          <a href="/pieces">Pieces</a>
+          <a href="/contact">Contact</a>
         </ul>
       </Router>
       <div className="art-rights">

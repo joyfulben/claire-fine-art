@@ -7,21 +7,25 @@ const useStyles = makeStyles((theme) => ({
   root: {
     '& > *': {
       margin: theme.spacing(1),
-      width: '35ch',
+      width: '100%',
       borderRadius: '5px',
+      transition: 'all 1s',
       '& :focus': {
         boxShadow: '1px 1px 5px black',
-        backgroundColor: 'rgb(0, 252, 252)'
+        transition: 'all 1s',
+        backgroundColor: 'rgb(92, 246, 121)'
       }
     },
   },
 }));
 
-export default function TextFields({handleChange, body, title}) {
+export default function TextFields({handleChange, body, title, setBody, setTitle}) {
   const classes = useStyles();
   const handleSubmit = (e) => {
     e.preventDefault();
-    window.location = `mailto:benfishernow@gmail.com?subject=${title}&body=${body}`;
+    window.open(`mailto:benfishernow@gmail.com?subject=${title}&body=${body}`);
+    setTitle('');
+    setBody('');
   }
 
   return (
@@ -32,15 +36,19 @@ export default function TextFields({handleChange, body, title}) {
       onChange={handleChange}
       label="Subject"
       variant="filled"
+      placeholder="Can I display your art?"
+      value={title}
       />
       <TextField
       id="standard-textarea"
       onChange={handleChange}
+      placeholder="Your work is mesmerizing!"
       name="body"
       label="Body"
       variant="filled"
       multiline
       rows={6}
+      value={body}
       />
       <SubmitButton type="submit">Submit</SubmitButton>
     </form>

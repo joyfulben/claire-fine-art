@@ -20,7 +20,7 @@ const Contact = () => {
   return (
     <div className="contact-container">
       <h2>Contact Form</h2>
-      <TextFields handleChange={handleChange} body={body} title={title}/>
+      <TextFields handleChange={handleChange} body={body} title={title} setBody={setBody} setTitle={setTitle}/>
     </div>
   )
 }

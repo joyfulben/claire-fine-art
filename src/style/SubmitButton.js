@@ -13,16 +13,16 @@ const SubmitButton = withStyles({
     backgroundColor: 'rgba(49, 240, 97, 0.32)',
     '&:hover': {
       backgroundColor: 'rgba(49, 240, 97, 0.22)',
-      borderColor: '#0062cc',
+      borderColor: 'green',
       boxShadow: 'none',
     },
     '&:active': {
       boxShadow: 'none',
-      backgroundColor: 'rgba(#01dffe, 0.49)',
-      borderColor: '#005cbf',
+      backgroundColor: 'rgba(0, 215, 28, 0.67)',
+      borderColor: 'green',
     },
     '&:focus': {
-      boxShadow: '0 0 0 0.2rem rgba(0,123,255,.5)',
+      boxShadow: '0 0 0 0.2rem rgba(111, 250, 163, 0.5)',
     },
   },
 })(Button);
