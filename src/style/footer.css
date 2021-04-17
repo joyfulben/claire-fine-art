@@ -39,11 +39,15 @@ color: purple;
   height: 100px;
 }
 .footer-logo-background {
-  position: absolute;
+  position: relative;
+  background-repeat: none;
   height: 61px;
-  bottom: 0;
   z-index: -1;
-
+  bottom: -40px;
+}
+.footer-logo {
+  position: absolute;
+  height: 100px;
 }
 .art-rights h3 {
   min-width: 190px;
@@ -51,8 +55,10 @@ color: purple;
 }
 @media only screen and (max-width: 900px) {
   .footer-container {
+    position: relative;
     flex-direction: column;
     height: 200px;
+    margin-top: 140px;
   }
   .footer-container ul {
     margin: 0;
@@ -67,6 +73,6 @@ color: purple;
     position: unset;
   }
   .footer-logo-background {
-    bottom: 30.9px;
+    bottom: -37px;
   }
 }

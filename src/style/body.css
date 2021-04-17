@@ -63,3 +63,24 @@
   background-size: cover;
   transition: all 2s;
 }
+
+@media only screen and (max-width: 1200px) {
+  .store-categories {
+    flex-direction: column;
+    height: 60vh;
+    align-items: center;
+  }
+  .store-categories a {
+    height: 20vh;
+    min-height: 200px;
+    width: 90vw;
+    margin-bottom: 10px;
+  }
+  .store-categories a h2 {
+    font-size: 46px;
+  }
+  .card-container > div {
+    background-position: center;
+    background-size: cover; 
+  }
+}
