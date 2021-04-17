@@ -61,3 +61,36 @@ img {
   from { opacity: 1; }
   to { opacity: 0; }
 }
+@media only screen and (max-width: 1000px) {
+  .pieces-container{
+    animation: fadein 2s ease-in;
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+    grid-template-rows: repeat(6, 25vw);
+    grid-gap: 20px;
+    animation: fadein 2s ease-in-out;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .pieces-container{
+    animation: fadein 2s ease-in;
+    display: grid;
+    grid-template-columns: repeat(1, 100%);
+    grid-template-rows: repeat(6, 100vh);
+    grid-gap: 20px;
+    animation: fadein 2s ease-in-out;
+    .gallery-piece  {
+      height: 100vh;
+      position: relative;
+      .WithStyles\(ForwardRef\(Button\)\)-root-1 {
+        width: 90vw;
+        margin: 0 5vw;
+      }
+      img {
+        max-height: unset;
+        height: 75vh;
+      }
+    }
+  }
+
+}

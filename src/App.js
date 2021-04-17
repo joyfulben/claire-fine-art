@@ -25,6 +25,7 @@ const styles = {
 
 export default function App() {
   const [modal, showModal] = useState(false);
+  // In this case children are the individual (piece)s are being .push()ed from ArtRepo depending on what path with root /pieces the user is being routed to.
   const [children, setChildren] = useState([]);
   const [darkMode, setDarkMode] = useState(false);
   const seeModal = () => showModal(true);
@@ -42,6 +43,8 @@ export default function App() {
 
     <Router>
     <nav className="header-container">
+    {// logo-container has logo pic from exported from SiteLogo
+    }
       <div className="logo-container">
         <a href="/"><img className="site-logo" src={SiteLogo.logo} alt="site logo"/></a>
         <img className="logo-background" src={SiteLogo.logoBackground} alt="logo background" />
@@ -70,7 +73,7 @@ export default function App() {
     </Modal>
     }
     <footer>
-     <Footer />
+     <Footer siteLogo={SiteLogo}/>
     </footer>
     </div>
   );

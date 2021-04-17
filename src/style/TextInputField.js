@@ -13,7 +13,8 @@ const useStyles = makeStyles((theme) => ({
       '& :focus': {
         boxShadow: '1px 1px 5px black',
         transition: 'all 1s',
-        backgroundColor: 'rgb(92, 246, 121)'
+        backgroundColor: 'rgb(92, 246, 121)',
+        paddingLeft: '7px'
       }
     },
   },
@@ -51,6 +52,8 @@ export default function TextFields({handleChange, body, title, setBody, setTitle
       value={body}
       />
       <SubmitButton type="submit">Submit</SubmitButton>
+
     </form>
+
   );
 }

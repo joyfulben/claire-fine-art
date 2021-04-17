@@ -3,6 +3,8 @@ import '../style/contact.css';
 import sanitizeHtml from 'sanitize-html';
 import TextFields from '../style/TextInputField';
 
+// NOTE: Breadcrumbs: App.js
+
 const Contact = () => {
   const [body, setBody] = useState("");
   const [title, setTitle] = useState("");

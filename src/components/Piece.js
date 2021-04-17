@@ -1,6 +1,8 @@
 import React from "react";
 import '../style/piece.css';
 
+// NOTE: Breadcrumbs: App.js
+
 const Piece = ({ data }) => {
   console.log(data);
   let pieceData;
