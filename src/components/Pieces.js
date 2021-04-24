@@ -38,17 +38,21 @@ const Pieces = ({setChildren, seeModal, childData, type, darkMode, styles}) => {
   //   setWidth(window.screen.width);
   //   checkScreenWidth()
   // }, [width]);
-console.log(window.innerWidth)
+
   return (
     <div className="gallery-container">
       <h2 className="type-headline">{type}</h2>
       <div className={screenWidthClass}>
+      {window.screen.width < 900 && <div className="icon-navbar-container">
+
+        </div>
+      }
       {piecesArr.map((piece, i) => {
         return (
           <div key={i} className="gallery-piece" >
             <img onClick={() => handlePicClick(piece.src)} src={piece.src} alt={`piece ${i}`} loading="lazy" />
             <Link  to={`/${piece.id}`}><DetailsButton onClick={() => setChildren(piece)} className="details-button">Details</DetailsButton></Link>
-            
+
           </div>
         );
       }

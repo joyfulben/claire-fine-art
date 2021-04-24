@@ -3,6 +3,7 @@
   width: 100%;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 .art-rights {
   margin: 0;
@@ -43,7 +44,7 @@ color: purple;
   background-repeat: none;
   height: 61px;
   z-index: -1;
-  bottom: -40px;
+  bottom: -39px;
 }
 .footer-logo {
   position: absolute;
@@ -52,6 +53,11 @@ color: purple;
 .art-rights h3 {
   min-width: 190px;
   text-align: right;
+}
+.footer-container h4 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
 @media only screen and (max-width: 900px) {
   .footer-container {
@@ -75,4 +81,5 @@ color: purple;
   .footer-logo-background {
     bottom: -37px;
   }
+
 }

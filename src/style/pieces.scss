@@ -72,6 +72,15 @@ img {
   }
 }
 @media only screen and (max-width: 900px) {
+  .icon-navbar-container {
+    position: fixed;
+    height: 80vh;
+    width: 20%;
+    top: 40px;
+    background-color: rgba(12, 240, 208, 0.57);
+    z-index: 1;
+  }
+  .gallery-container {
   .pieces-container{
     animation: fadein 2s ease-in;
     display: grid;
@@ -92,5 +101,5 @@ img {
       }
     }
   }
-
+}
 }

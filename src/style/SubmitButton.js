@@ -8,7 +8,7 @@ const SubmitButton = withStyles({
     textTransform: 'none',
     fontSize: 16,
     padding: '6px 12px',
-    border: '1px solid',
+    boxShadow: '0 0 5px rgb(3, 179, 57)',
     lineHeight: 1.5,
     backgroundColor: 'rgba(49, 240, 97, 0.32)',
     '&:hover': {

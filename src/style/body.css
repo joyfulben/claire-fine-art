@@ -72,7 +72,7 @@
   }
   .store-categories a {
     height: 20vh;
-    min-height: 200px;
+    min-height: 100px;
     width: 90vw;
     margin-bottom: 10px;
   }
@@ -81,6 +81,6 @@
   }
   .card-container > div {
     background-position: center;
-    background-size: cover; 
+    background-size: cover;
   }
 }

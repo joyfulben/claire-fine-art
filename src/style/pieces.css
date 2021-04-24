@@ -82,7 +82,16 @@
   }
 }
 @media only screen and (max-width: 900px) {
-  .pieces-container {
+  .icon-navbar-container {
+    position: fixed;
+    height: 80vh;
+    width: 20%;
+    top: 40px;
+    background-color: rgba(12, 240, 208, 0.57);
+    z-index: 1;
+  }
+
+  .gallery-container .pieces-container {
     animation: fadein 2s ease-in;
     display: grid;
     grid-template-columns: repeat(1, 100%);
@@ -90,15 +99,15 @@
     grid-gap: 20px;
     animation: fadein 2s ease-in-out;
   }
-  .pieces-container .gallery-piece {
+  .gallery-container .pieces-container .gallery-piece {
     height: 100vh;
     position: relative;
   }
-  .pieces-container .gallery-piece .WithStyles\(ForwardRef\(Button\)\)-root-1 {
+  .gallery-container .pieces-container .gallery-piece .WithStyles\(ForwardRef\(Button\)\)-root-1 {
     width: 90vw;
     margin: 0 5vw;
   }
-  .pieces-container .gallery-piece img {
+  .gallery-container .pieces-container .gallery-piece img {
     max-height: unset;
     height: 75vh;
   }
