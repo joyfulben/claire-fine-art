@@ -20,12 +20,16 @@ const Pieces = ({setChildren, seeModal, childData, type, darkMode, styles}) => {
 
   const [screenWidthClass, setClass] = useState('pieces-container');
   const breakPoint = 1230;
+  const [activeIconId, setActiveIconId] = useState(0);
 
   const handlePicClick = (src) => {
     seeModal();
     setChildren(<img src={src} alt="modal pic"/>);
   }
-
+  const navbarIconClickHandler = (id) => {
+    console.log(id);
+    setActiveIconId(id);
+  }
 
   const darkie = () => {
     if (darkMode) {
@@ -44,7 +48,15 @@ const Pieces = ({setChildren, seeModal, childData, type, darkMode, styles}) => {
       <h2 className="type-headline">{type}</h2>
       <div className={screenWidthClass}>
       {window.screen.width < 900 && <div className="icon-navbar-container">
-
+      {
+        childData[0].map((piece, i) => {
+        return (
+          <div key ={i} className="small-piece-container">
+            <img onClick={() => navbarIconClickHandler(piece.id)} src={piece.src} alt={`piece ${i}`} />
+          </div>
+        )
+        })
+      }
         </div>
       }
       {piecesArr.map((piece, i) => {
