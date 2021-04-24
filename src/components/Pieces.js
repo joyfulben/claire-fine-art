@@ -46,22 +46,23 @@ const Pieces = ({setChildren, seeModal, childData, type, darkMode, styles}) => {
   return (
     <div className="gallery-container">
       <h2 className="type-headline">{type}</h2>
-      <div className={screenWidthClass}>
       {window.screen.width < 900 && <div className="icon-navbar-container">
       {
         childData[0].map((piece, i) => {
         return (
-          <div key ={i} className="small-piece-container">
-            <img onClick={() => navbarIconClickHandler(piece.id)} src={piece.src} alt={`piece ${i}`} />
+          <div key ={i} className={`small-piece-container ${activeIconId === piece.id && 'active'}`} >
+            <a href={`#${piece.id}`}><img onClick={() => navbarIconClickHandler(piece.id)} src={piece.src} alt={`piece ${i}`} /></a>
           </div>
         )
         })
       }
         </div>
       }
+      <div className={screenWidthClass}>
+
       {piecesArr.map((piece, i) => {
         return (
-          <div key={i} className="gallery-piece" >
+          <div id={`${piece.id}`} key={i} className="gallery-piece" >
             <img onClick={() => handlePicClick(piece.src)} src={piece.src} alt={`piece ${i}`} loading="lazy" />
             <Link  to={`/${piece.id}`}><DetailsButton onClick={() => setChildren(piece)} className="details-button">Details</DetailsButton></Link>
 

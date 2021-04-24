@@ -84,7 +84,7 @@
 @media only screen and (max-width: 900px) {
   .icon-navbar-container {
     position: fixed;
-    overflow: scroll;
+    overflow-y: scroll;
     max-height: 90vh;
     width: 20%;
     top: 40px;
@@ -92,21 +92,34 @@
     z-index: 1;
   }
   .icon-navbar-container .small-piece-container {
+    scroll-snap-align: center;
     height: 6vh;
+  }
+  .icon-navbar-container .small-piece-container.active {
+    height: 16vh;
   }
   .icon-navbar-container .small-piece-container img {
     width: 100%;
   }
 
+  .gallery-container {
+    display: flex;
+  }
   .gallery-container .pieces-container {
+    align-self: flex-end;
     animation: fadein 2s ease-in;
     display: grid;
     grid-template-columns: repeat(1, 100%);
     grid-template-rows: repeat(6, 100vh);
     grid-gap: 20px;
+    width: 80%;
+    overflow-y: scroll;
+    height: 100%;
     animation: fadein 2s ease-in-out;
   }
   .gallery-container .pieces-container .gallery-piece {
+    display: flex;
+    justify-content: center;
     height: 100vh;
     position: relative;
   }

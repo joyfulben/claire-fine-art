@@ -74,28 +74,41 @@ img {
 @media only screen and (max-width: 900px) {
   .icon-navbar-container {
     position: fixed;
-    overflow: scroll;
+    overflow-y: scroll;
+
     max-height: 90vh;
     width: 20%;
     top: 40px;
     background-color: rgba(12, 240, 208, 0.57);
     z-index: 1;
     .small-piece-container {
+      scroll-snap-align: center;
       height: 6vh;
+      &.active {
+        height: 16vh;
+      }
       img {
         width: 100%;
       }
     }
   }
   .gallery-container {
+    display: flex;
   .pieces-container{
+    align-self: flex-end;
     animation: fadein 2s ease-in;
     display: grid;
     grid-template-columns: repeat(1, 100%);
     grid-template-rows: repeat(6, 100vh);
     grid-gap: 20px;
+    width: 80%;
+    overflow-y: scroll;
+    height: 100%;
     animation: fadein 2s ease-in-out;
     .gallery-piece  {
+
+      display: flex;
+      justify-content: center;
       height: 100vh;
       position: relative;
       .WithStyles\(ForwardRef\(Button\)\)-root-1 {
