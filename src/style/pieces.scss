@@ -6,6 +6,12 @@
 .gallery-container h2 {
   text-align: center;
 }
+.icon-navbar-container {
+  opacity: 0;
+  position: fixed;
+  pointer-events: none;
+  width: 0;
+}
 .gallery-piece {
   display: flex;
   flex-direction: column;
@@ -30,7 +36,7 @@ img {
   animation: fadein 2s ease-in;
   display: grid;
   grid-template-columns: repeat(4, 2fr);
-  grid-template-rows: repeat(6, 25vw);
+  grid-template-rows: repeat(1, 25vw);
   grid-gap: 20px;
   animation: fadein 2s ease-in-out;
 }
@@ -66,45 +72,57 @@ img {
     animation: fadein 2s ease-in;
     display: grid;
     grid-template-columns: repeat(3, 33%);
-    grid-template-rows: repeat(6, 25vw);
+    grid-template-rows: repeat(1, 25vw);
     grid-gap: 20px;
     animation: fadein 2s ease-in-out;
   }
 }
 @media only screen and (max-width: 900px) {
   .icon-navbar-container {
+    opacity: 1;
+    margin-left: 15px;
+    pointer-events: all;
+    display: block;
+    border: 5px solid black;
     position: fixed;
     overflow-y: scroll;
-
     max-height: 90vh;
+    min-height: 30vh;
     width: 20%;
     top: 40px;
-    background-color: rgba(12, 240, 208, 0.57);
     z-index: 1;
+    box-shadow: 2px 2px solid silver;
+    scroll-snap-type: x mandatory;
+    transition: all 1s;
     .small-piece-container {
       scroll-snap-align: center;
       height: 6vh;
       &.active {
-        height: 16vh;
+        height: 12vh;
       }
       img {
+        border-top: 4px solid rgb(79, 255, 160);
         width: 100%;
       }
     }
   }
   .gallery-container {
     display: flex;
+
   .pieces-container{
     align-self: flex-end;
     animation: fadein 2s ease-in;
     display: grid;
     grid-template-columns: repeat(1, 100%);
-    grid-template-rows: repeat(6, 100vh);
+    grid-template-rows: repeat(3, 100vh);
     grid-gap: 20px;
     width: 80%;
     overflow-y: scroll;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
     height: 100%;
     animation: fadein 2s ease-in-out;
+    transition: all 1s;
     .gallery-piece  {
 
       display: flex;
@@ -112,13 +130,14 @@ img {
       height: 100vh;
       position: relative;
       .WithStyles\(ForwardRef\(Button\)\)-root-1 {
-        width: 90vw;
-        margin: 0 5vw;
+        width: 60vw;
+        margin: 40px 10vw;
       }
       img {
         max-height: unset;
         height: 75vh;
       }
+      transition: all 1s;
     }
   }
 }

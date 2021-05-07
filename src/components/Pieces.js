@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import '../style/pieces.css';
 import DetailsButton from '../style/DetailsButton';
@@ -18,54 +18,54 @@ const Pieces = ({setChildren, seeModal, childData, type, darkMode, styles}) => {
   }
   updateChildren();
 
-  const [screenWidthClass, setClass] = useState('pieces-container');
   const breakPoint = 1230;
   const [activeIconId, setActiveIconId] = useState(0);
+  const [width, setWidth] = useState(0)
+  const [iconNavbarDisplay, setDisplay] = useState('none')
 
   const handlePicClick = (src) => {
     seeModal();
     setChildren(<img src={src} alt="modal pic"/>);
   }
   const navbarIconClickHandler = (id) => {
-    console.log(id);
     setActiveIconId(id);
   }
-
-  const darkie = () => {
-    if (darkMode) {
-      return (styles.detailsButton);
-    } else {
-      return ({});
+  const displayIconNavbar = () => {
+    if (width < 900) {
+      setDisplay('block')
+    } else if (width > 899) {
+      setDisplay('none')
     }
   }
-  // useEffect(() => {
-  //   setWidth(window.screen.width);
-  //   checkScreenWidth()
-  // }, [width]);
+
+
+
+  useEffect(() => {
+    setWidth(Number(window.screen.width));
+    displayIconNavbar();
+    console.log(window.screen.width);
+  }, []);
 
   return (
     <div className="gallery-container">
       <h2 className="type-headline">{type}</h2>
-      {window.screen.width < 900 && <div className="icon-navbar-container">
-      {
-        childData[0].map((piece, i) => {
-        return (
-          <div key ={i} className={`small-piece-container ${activeIconId === piece.id && 'active'}`} >
-            <a href={`#${piece.id}`}><img onClick={() => navbarIconClickHandler(piece.id)} src={piece.src} alt={`piece ${i}`} /></a>
-          </div>
-        )
-        })
-      }
+       <div style={{display: iconNavbarDisplay}} className="icon-navbar-container">
+        { piecesArr.map((piece, i) => {
+            return (
+              <div key ={i} className={`small-piece-container ${activeIconId === piece.id && 'active'}`} >
+                <a href={`#${piece.id}`}><img onClick={() => navbarIconClickHandler(piece.id)} src={piece.src} alt={`piece ${i}`} /></a>
+              </div>
+            )
+          })
+        }
         </div>
-      }
-      <div className={screenWidthClass}>
+      <div className="pieces-container">
 
       {piecesArr.map((piece, i) => {
         return (
           <div id={`${piece.id}`} key={i} className="gallery-piece" >
             <img onClick={() => handlePicClick(piece.src)} src={piece.src} alt={`piece ${i}`} loading="lazy" />
             <Link  to={`/${piece.id}`}><DetailsButton onClick={() => setChildren(piece)} className="details-button">Details</DetailsButton></Link>
-
           </div>
         );
       }

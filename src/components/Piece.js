@@ -13,12 +13,27 @@ const Piece = ({ data }) => {
 
         <img src={data.src} alt={`${data.title} pic`} />
         <div className="title-price-container">
-          <h1> {data.title} </h1>
-          <hr />
-          <h2>
-          {data.medium}</h2>
-          <hr />
-          <h2>${data.price}</h2>
+          <table>
+            <thead>
+              <tr className="piece-title-row">
+                <th>{data.title}</th>
+              </tr>
+            </thead>
+            <tbody>
+            <tr>
+              <th>Mediums</th>
+              <td>{data.medium}</td>
+            </tr>
+            <tr>
+              <th>Canvas</th>
+              <td>{data.canvas}</td>
+            </tr>
+            <tr>
+              <th>Year</th>
+              <td>{Number(data.year)}</td>
+            </tr>
+            </tbody>
+          </table>
         </div>
       </div>
     );

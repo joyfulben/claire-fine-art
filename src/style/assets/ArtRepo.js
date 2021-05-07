@@ -51,15 +51,21 @@ import cephalopod from './art-pics/cephalopod.jpg';
 import gopherASnuggle from './art-pics/gopher_a_snuggle.png';
 import whaleSky from './art-pics/whale_sky.png';
 import whaleSkyBlue from './art-pics/whale_sky_blue.png';
+import danceOfKelp from './art-pics/dance_of_kelp.jpeg';
+import kenai from './art-pics/kenai.jpeg';
+import jamiesLillies from './art-pics/lillies.jpg';
+import shroomMoon from './art-pics/shroom_moon.jpeg';
+import rooted from './art-pics/rooted.jpeg';
 
 const ArtRepo = {
     encaustics: [
       {
         id: 201,
         src: drippingHair,
-        title: "Dripping Hair",
-        medium: "Encaustic",
-        price: 4220,
+        title: "Hold Still and Find Out",
+        medium: "Encaustic Paint, Clay, Straw",
+        canvas: "Wood",
+        year: 2021,
         partials: [
           { src: drippingHairPartial }
         ]
@@ -67,9 +73,10 @@ const ArtRepo = {
       {
         id: 202,
         src: tripleBlueEncausticGallery,
-        title: "Triple Blue",
-        medium: "Encaustic",
-        price: 1520,
+        title: "Tree Reflections",
+        medium: "Encaustic Paint",
+        year: 2016,
+        dimensions: `4x5"/piece`,
         partials: [
           { src: tripleBlueEncausticPartial }
         ]
@@ -77,9 +84,64 @@ const ArtRepo = {
       {
         id: 203,
         src: manyBranches,
-        title: "Many Branches",
-        medium: "Encaustic",
-        price: 2354
+        title: "Angel Tree",
+        medium: "Encaustic Wax",
+        canvas: "Wood",
+        year: 2017,
+        dimensions: `8.5x8.5"`
+      },
+      {
+        id: 204,
+        src: danceOfKelp,
+        title: "Dance of Kelp",
+        medium: "Encaustic Wax, Clay",
+        canvas: "Wood",
+        year: 2020,
+        dimensions: `8.5x15.5"`
+      },
+      {
+        id: 205,
+        src: cephalopod,
+        title: "Octopus Garden",
+        medium: "Encaustic paint, Shellac",
+        canvas: "Wood",
+        year: 2014
+      },
+      {
+        id: 206,
+        src: lotsOLotus,
+        title: "Lotus Walks",
+        medium: "Encaustic Wax, Chalk, Oil Paint, Spray Paint",
+        canvas: "Wood",
+        year: 2010,
+        dimensions: `11x16"`
+      },
+      {
+        id: 207,
+        src: lotusLifeCycle,
+        title: "Lotus Life Cycle",
+        medium: "Encaustic Wax, Chalk, Oil Paint, Spray Paint",
+        canvas: "Wood",
+        year: 2010,
+        dimensions: `11x16"`
+      },
+      {
+        id: 208,
+        src: shroomMoon,
+        title: "Shroom Moon",
+        medium: "Encaustic Wax, Clay, Water Color",
+        canvas: "Wood",
+        year: 2020,
+        dimensions: `6x10"`
+      },
+      {
+        id: 209,
+        src: rooted,
+        title: "Rooted",
+        medium: "Encaustic Wax, Oil Paint, Clay",
+        canvas: "Wood",
+        year: 2020,
+        dimensions: `9.5x14"`
       }
     ],
     prints: [
@@ -88,7 +150,7 @@ const ArtRepo = {
         src: whaleSky,
         title: "Whale Sky",
         medium: "Print",
-        price: 1220,
+        year: 1220,
         partials: [
           { src: whaleSkyBlue }
         ]
@@ -98,119 +160,116 @@ const ArtRepo = {
         src: gopherASnuggle,
         title: "I Could Gopher A Snuggle!",
         medium: "Print",
-        price: 1220
+        year: 1220
       },
       {
         id: 103,
         src: acornInHeart,
         title: "Acorn In Heart",
         medium: "Print",
-        price: 1450
-      },
-      {
-        id: 104,
-        src: cephalopod,
-        title: "Cephalopod",
-        medium: "Print",
-        price: 1870
+        year: 1450
       },
       {
         id: 105,
         src: cagedCrow,
         title: "Caged Crow",
         medium: "Print",
-        price: 1400
+        year: 1400
       },
       {
         id: 106,
         src: whereHaveYouBean,
         title: "Where Have You Bean?",
         medium: "Print",
-        price: 820
+        year: 820
       },
       {
         id: 107,
         src: youOctopi,
         title: "You Octopi My Heart",
         medium: "Print",
-        price: 2220
+        year: 2220
       },
       {
         id: 108,
         src: youAreHereOrange,
         title: "You Are Here",
         medium: "Print",
-        price: 1250
+        year: 1250
       },
       {
         id: 109,
         src: squidRelationship,
         title: "Squid Relationship",
         medium: "Print",
-        price: 1120
+        year: 1120
       },
       {
         id: 110,
         src: bloodyStocking,
         title: "Bloody Stocking",
         medium: "Print",
-        price: 720
+        year: 720
       },
       {
         id: 111,
         src: personSittingInHeart,
         title: "Sitting In Heart",
         medium: "Print",
-        price: 1370
+        year: 1370
       },
       {
         id: 112,
         src: octopusOverHeart,
         title: "Octopus Heart",
         medium: "Print",
-        price: 1920
+        year: 1920
       },
       {
         id: 113,
         src: shellfishlyOrange,
         title: "Shellfishly Yours",
         medium: "Print",
-        price: 1110
+        year: 1110
       },
       {
         id: 114,
         src: bunniesRedSky,
         title: "Bunnies Red Sky",
         medium: "Print",
-        price: 1436
+        year: 1436
       },
       {
         id: 115,
         src: flatironPoppies,
-        title: "Poppies",
-        medium: "Print",
-        price: 1980
+        title: "Flatirons and Poppies",
+        medium: "Encaustic Wax",
+        canvas: "Wood",
+        year: 2014,
+        dimensions: `11x15"`
       },
       {
         id: 116,
         src: yellowUnderCanopy,
-        title: "Yellow Under Canopy",
-        medium: "Print",
-        price: 520
+        title: "Ashley's Roots",
+        medium: "Oil Pastels",
+        canvas: "Paper",
+        year: 2013,
+        dimensions: `12x18"`
       },
       {
         id: 117,
         src: heartacheDecompartmentalized,
-        title: "Heartache",
+        title: "Fish Head",
         medium: "Print",
-        price: 2520
+        year: 2009
       },
       {
         id: 118,
         src: whaleSky,
         title: "Whale Sky",
         medium: "Print",
-        price: 1220,
+        year: 1220,
         partials: [
           { src: whaleSkyBlue }
         ]
@@ -220,35 +279,48 @@ const ArtRepo = {
         src: thornWrappedComfort,
         title: "Thorn-wrapped Comfort",
         medium: "Print",
-        price: 1620
+        year: 1620
       },
       {
         id: 120,
         src: shipCthuluWaves,
         title: "Ship Cthulu",
         medium: "Print",
-        price: 1350
+        year: 1350
       },
       {
         id: 121,
         src: snailFreedom,
-        title: "Snail Freedom",
-        medium: "Print",
-        price: 1220
+        title: "Victory Snail",
+        medium: "Reduction Linoleum Print",
+        canvas: "Paper",
+        year: 2021,
+        dimensions: `10x8.5"`
       },
       {
         id: 122,
         src: fishyCubism,
-        title: "Fishy Cubism",
-        medium: "Print",
-        price: 590
+        title: "Swirly Swirly Fish Fish",
+        medium: "Linoleum Print",
+        canvas: "Paper",
+        year: 2014
       },
       {
         id: 123,
         src: samuraiDogJoy,
-        title: "Samurai Dog Joy",
-        medium: "Print",
-        price: 890
+        title: "ichibon",
+        medium: "Linoleum Print",
+        canvas: "Paper",
+        year: 2005,
+        dimensions: `5x8"`
+      },
+      {
+        id: 124,
+        src: kenai,
+        title: "Kenai",
+        medium: "linoleum print",
+        canvas: "paper",
+        year: 2005
       }
     ],
     mixed: [
@@ -257,7 +329,7 @@ const ArtRepo = {
         src: shellLayersFullHorizontal,
         title: "Shell Layers",
         medium: "Acrylic",
-        price: 50,
+        year: 50,
         partials: [
           { src: shellLayersPartial1 },
           { src: shellLayersPartial2 }
@@ -268,7 +340,7 @@ const ArtRepo = {
         src: orangeFishFull,
         title: "Orange Fish",
         medium: "Acrylic",
-        price: 80,
+        year: 80,
         partials: [
           { src: orangeFishCloseup1 },
           { src: orangeFishCloseup2 }
@@ -279,7 +351,7 @@ const ArtRepo = {
         src: blueFishFull,
         title: "Blue Fish",
         medium: "Acrylic",
-        price: 100,
+        year: 100,
         partials: [
           {src: blueFishPartial}
         ]
@@ -289,21 +361,21 @@ const ArtRepo = {
         src: circleClumpTrees,
         title: "Circle Clump Trees",
         medium: "Acrylic and Discs",
-        price: 120
+        year: 120
       },
       {
         id: 5,
         src: clamDisco,
         title: "Clam Disco",
         medium: "Acrylic",
-        price: 75
+        year: 75
       },
       {
         id: 6,
         src: buddhaWithinFull,
         title: "Buddha Within",
         medium: "Acrylic",
-        price: 150,
+        year: 150,
         partials: [
           { src: buddhaWithinPartial }
         ]
@@ -311,33 +383,21 @@ const ArtRepo = {
       {
         id: 7,
         src: redPoppies,
-        title: "Red Poppies",
-        medium: "Acrylic",
-        price: 80,
+        title: "Poppies Reaching",
+        medium: "Encaustic Wax",
+        canvas: "Wood",
+        year: 2017,
+        dimensions: `11x16"`,
         partials: [
           { src: redPoppiesPartial }
         ]
-      },
-      {
-        id: 9,
-        src: lotsOLotus,
-        title: "Lots \'O Lotus",
-        medium: "Acrylic",
-        price: 180
-      },
-      {
-        id: 10,
-        src: lotusLifeCycle,
-        title: "Lotus Life Cycle",
-        medium: "Acrylic",
-        price: 140
       },
       {
         id: 11,
         src: mossWaterPixels,
         title: "Moss & Water Pixels",
         medium: "Acrylic",
-        price: 320,
+        year: 320,
         partials: [
           { src: mossWaterPixelsClose1 },
           { src: mossWaterPixelsClose2 },
@@ -347,23 +407,38 @@ const ArtRepo = {
       {
         id: 12,
         src: lotusHeartMountain,
-        title: "Lotus Heart Mountain",
-        medium: "Acrylic",
-        price: 220
+        title: "Golden Lotus",
+        medium: "Chalk, Encaustic Wax, Oil Paint, Spray Paint",
+        canvas: "Wood",
+        year: 2016,
+        dimensions: `11x15"`
       },
       {
         id: 13,
         src: blueDanTien,
-        title: "Blue Dan Tien",
-        medium: "Acrylic",
-        price: 175
+        title: "Blue Girl",
+        medium: "Encaustic",
+        canvas: "Wood",
+        year: 2017,
+        dimensions: `5x8"`
       },
       {
         id: 14,
         src: celloDan,
-        title: "Cello Dan",
-        medium: "Acrylic",
-        price: 185
+        title: "Dan and Cello",
+        medium: "Oil Paint",
+        canvas: "Canvas",
+        year: 2013,
+        dimensions: `14x20"`
+      },
+      {
+        id: 15,
+        src: jamiesLillies,
+        title: "Jamie's Lillies",
+        medium: "Oil Pastels",
+        canvas: "Paper",
+        year: 2010,
+        dimensions: `12x18"`
       }
     ]
   };

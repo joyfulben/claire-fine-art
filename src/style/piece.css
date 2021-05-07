@@ -35,3 +35,64 @@ hr {
   border-radius: 50%;
   margin: 0 auto;
 }
+/*^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ This is the styling for table displaying the piece data
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^*/
+table {
+  table-layout: fixed;
+  width: 100%;
+  background: rgb(34, 222, 177);
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+tr {
+  width: 100%;
+  display: flex;
+  height: 30px;
+  margin: 5px 0;
+  align-items: center;
+  font-size: 18px;
+}
+tbody tr:hover th {
+  background-color: rgba(156, 208, 7, 0.8);
+  cursor: default;
+}
+tbody tr:hover td {
+    background-color: rgba(29, 62, 233, .4);
+    cursor: default;
+}
+tbody th {
+  height: 100%;
+  width: 40%;
+  background: rgba(156, 208, 7, 0.5);
+  box-shadow: -3px 3px 3px rgba(133, 133, 133, 0.52);
+  padding: 5px;
+  margin-right: 5px;
+  color: rgb(69, 69, 69);
+  font-weight: bold;
+  text-shadow: 0 0 3px white;
+}
+tbody td {
+  height: 100%;
+  width: 60%;
+  background: rgba(29, 62, 233, .3);
+  box-shadow: -3px 3px 3px rgba(133, 133, 133, 0.52);
+  padding: 5px;
+  color: rgb(203, 203, 203);
+  font-weight: bold;
+  text-shadow: 0 0 3px black;
+}
+
+.piece-title-row th {
+  font-size: 30px;
+  background: rgb(34, 222, 177);
+  text-shadow: -3px 3px 2px rgba(133, 133, 133, 0.52);
+}
+
+.piece-title-row {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

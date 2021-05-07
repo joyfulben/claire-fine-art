@@ -1,6 +1,6 @@
 import React from 'react';
 import '../style/footer.css';
-import { BrowserRouter as Router, Link } from 'react-router-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
 
 const Footer = ({siteLogo}) => {
   return (
@@ -22,7 +22,10 @@ const Footer = ({siteLogo}) => {
         <img className="footer-logo" src={siteLogo.logo} alt="site logo"/>
         <img className="footer-logo-background" src={siteLogo.logoBackground} alt="site logo background" />
         </div>
-        <h3>All rights reserved &#x00A9;2021</h3>
+        <div className="reserved-rights">
+          <h3>All rights reserved</h3>
+          <h3>&#x00A9;2021</h3>
+        </div>
       </div>
       <h4>Built and Designed by <a href="https://benveloper.com">benveloper.com</a></h4>
     </div>

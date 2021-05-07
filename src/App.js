@@ -27,17 +27,9 @@ export default function App() {
   const [modal, showModal] = useState(false);
   // In this case children are the individual (piece)s are being .push()ed from ArtRepo depending on what path with root /pieces the user is being routed to.
   const [children, setChildren] = useState([]);
-  const [darkMode, setDarkMode] = useState(false);
   const seeModal = () => showModal(true);
   const closeModal = () => showModal(false);
 
-  const darkie = () => {
-    if (darkMode) {
-      return (styles.main)
-    } else {
-      return ({});
-    }
-  }
   return (
     <div className="root-container">
 
@@ -57,10 +49,10 @@ export default function App() {
     </nav>
     <Switch>
     <Route path="/" exact component={Home} />
-    <Route path="/pieces" exact component={() => (<Pieces darkMode={darkMode} styles={styles} setChildren={setChildren} seeModal={() => seeModal()} childData={[ArtRepo.encaustics, ArtRepo.prints, ArtRepo.mixed]}/>)} />
-    <Route path="/pieces/encaustics" exact component={() => (<Pieces darkMode={darkMode} styles={styles} setChildren={setChildren} seeModal={() => seeModal()} childData={[ArtRepo.encaustics]} type="Encaustics"/>)} />
-    <Route path="/pieces/prints" exact component={() => (<Pieces darkMode={darkMode} styles={styles} setChildren={setChildren} seeModal={() => seeModal()} childData={[ArtRepo.prints]} type="Prints"/>)} />
-    <Route path="/pieces/mixed" exact component={() => (<Pieces darkMode={darkMode} styles={styles} setChildren={setChildren} seeModal={() => seeModal()} childData={[ArtRepo.mixed]} type="Mixed"/>)} />
+    <Route path="/pieces" exact component={() => (<Pieces  styles={styles} setChildren={setChildren} seeModal={() => seeModal()} childData={[ArtRepo.encaustics, ArtRepo.prints, ArtRepo.mixed]}/>)} />
+    <Route path="/pieces/encaustics" exact component={() => (<Pieces styles={styles} setChildren={setChildren} seeModal={() => seeModal()} childData={[ArtRepo.encaustics]} type="Encaustics"/>)} />
+    <Route path="/pieces/prints" exact component={() => (<Pieces styles={styles} setChildren={setChildren} seeModal={() => seeModal()} childData={[ArtRepo.prints]} type="Prints"/>)} />
+    <Route path="/pieces/mixed" exact component={() => (<Pieces styles={styles} setChildren={setChildren} seeModal={() => seeModal()} childData={[ArtRepo.mixed]} type="Mixed"/>)} />
 
     <Route path="/contact" exact component={Contact} />
     <Route path={`/:pieceId`} component={() => (<Piece data={children} />)} />

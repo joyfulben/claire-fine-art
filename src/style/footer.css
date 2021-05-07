@@ -50,16 +50,24 @@ color: purple;
   position: absolute;
   height: 100px;
 }
-.art-rights h3 {
-  min-width: 190px;
-  text-align: right;
+.art-rights > h3 {
+  width: 150px;
 }
 .footer-container h4 {
   display: flex;
   flex-direction: column;
   text-align: center;
 }
-@media only screen and (max-width: 900px) {
+.reserved-rights {
+  display: flex;
+
+  text-align: center;
+}
+.reserved-rights h3:last-child {
+  
+}
+
+@media only screen and (max-width: 1000px) {
   .footer-container {
     position: relative;
     flex-direction: column;
@@ -81,5 +89,9 @@ color: purple;
   .footer-logo-background {
     bottom: -37px;
   }
-
+  .reserved-rights {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
 }

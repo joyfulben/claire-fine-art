@@ -1,10 +1,9 @@
-import React from 'react';
-import { createMuiTheme, withStyles, makeStyles, ThemeProvider } from '@material-ui/core/styles';
+
+import { withStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
 
 const SubmitButton = withStyles({
   root: {
-    boxShadow: 'none',
     textTransform: 'none',
     fontSize: 16,
     padding: '6px 12px',
