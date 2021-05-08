@@ -1,6 +1,6 @@
 import React from 'react';
 import '../style/body.css';
-
+// This is the three image buttons on the homepage
 const Body = () => {
   return (
     <div className="store-categories">
