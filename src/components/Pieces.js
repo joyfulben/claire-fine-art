@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import '../style/pieces.css';
 import DetailsButton from '../style/DetailsButton';
+import Piece from './Piece';
 
 // NOTE: Breadcrumbs: App.js
 
@@ -23,9 +24,9 @@ const Pieces = ({setChildren, seeModal, childData, type, darkMode, styles}) => {
   const [width, setWidth] = useState(0)
   const [iconNavbarDisplay, setDisplay] = useState('none')
 
-  const handlePicClick = (src) => {
+  const handlePicClick = (piece) => {
     seeModal();
-    setChildren(<img src={src} alt="modal pic"/>);
+    setChildren(<Piece data={piece}/>);
   }
   const navbarIconClickHandler = (id) => {
     setActiveIconId(id);
@@ -38,13 +39,6 @@ const Pieces = ({setChildren, seeModal, childData, type, darkMode, styles}) => {
     }
   }
 
-
-
-  useEffect(() => {
-    setWidth(Number(window.screen.width));
-    displayIconNavbar();
-    console.log(window.screen.width);
-  }, []);
 
   return (
     <div className="gallery-container">
@@ -64,7 +58,7 @@ const Pieces = ({setChildren, seeModal, childData, type, darkMode, styles}) => {
       {piecesArr.map((piece, i) => {
         return (
           <div id={`${piece.id}`} key={i} className="gallery-piece" >
-            <img onClick={() => handlePicClick(piece.src)} src={piece.src} alt={`piece ${i}`} loading="lazy" />
+            <img onClick={() => handlePicClick(piece)} src={piece.src} alt={`piece ${i}`} loading="lazy" />
             <Link  to={`/${piece.id}`}><DetailsButton onClick={() => setChildren(piece)} className="details-button">Details</DetailsButton></Link>
           </div>
         );

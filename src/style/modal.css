@@ -19,6 +19,9 @@
   transform: translate(-50%,-50%);
   z-index: 5;
 }
+.modal-main .piece-container img {
+  max-height: 60vh;
+}
 
 .modal-main img {
   width: auto;
