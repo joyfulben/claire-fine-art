@@ -24,7 +24,7 @@ const Footer = ({siteLogo}) => {
         </div>
         <div className="reserved-rights">
           <h3>All rights reserved</h3>
-          <h3>&#x00A9;2021</h3>
+          <h3>&#x00A9; 2021</h3>
         </div>
       </div>
       <h4>Built and Designed by <a href="https://benveloper.com">benveloper.com</a></h4>
