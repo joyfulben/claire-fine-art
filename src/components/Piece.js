@@ -1,14 +1,22 @@
-import React from "react";
+import React, {useState} from "react";
 import '../style/piece.css';
+import { StripeContainer } from './StripeContainer';
 
 // NOTE: Breadcrumbs: App.js
 
-const Piece = ({ data }) => {
-  console.log(data);
+const Piece = ({ data, seeModal }) => {
+  const [stripeContainer, showStripeContainer] = useState(false)
+  const [price, setPrice] = useState(1500)
+  const handleBuyClick = () => {
+    showStripeContainer(true);
+  }
+
   let pieceData;
 
   if (data) {
     pieceData = (
+      <>
+        {stripeContainer ? <StripeContainer price={price} /> :
       <div className="piece-container">
 
         <img src={data.src} alt={`${data.title} pic`} />
@@ -32,12 +40,20 @@ const Piece = ({ data }) => {
               <th>Year</th>
               <td>{Number(data.year)}</td>
             </tr>
+            <tr>
+              <th>Price</th>
+              <td>{data.price} <button onClick={() =>  handleBuyClick()}>Buy</button></td>
+            </tr>
             </tbody>
           </table>
         </div>
       </div>
-    );
-  } else {
+    }
+    </>
+    )
+
+
+} else {
     pieceData = <h2> Sorry. Piece doesn't exist </h2>;
   }
 

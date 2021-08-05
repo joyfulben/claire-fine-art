@@ -55,7 +55,7 @@ export default function App() {
     <Route path="/pieces/mixed" exact component={() => (<Pieces styles={styles} setChildren={setChildren} seeModal={() => seeModal()} childData={[ArtRepo.mixed]} type="Mixed"/>)} />
 
     <Route path="/contact" exact component={Contact} />
-    <Route path={`/:pieceId`} component={() => (<Piece data={children} />)} />
+    <Route path={`/:pieceId`} component={() => (<Piece data={children} seeModal={() => seeModal()} />)} />
 
     </Switch>
     </Router>

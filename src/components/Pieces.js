@@ -4,6 +4,7 @@ import '../style/pieces.css';
 import DetailsButton from '../style/DetailsButton';
 import Piece from './Piece';
 
+
 // NOTE: Breadcrumbs: App.js
 
 const Pieces = ({setChildren, seeModal, childData, type, darkMode, styles}) => {
@@ -24,26 +25,24 @@ const Pieces = ({setChildren, seeModal, childData, type, darkMode, styles}) => {
   const [width, setWidth] = useState(0)
   const [iconNavbarDisplay, setDisplay] = useState('none')
 
+
   const handlePicClick = (piece) => {
     seeModal();
     setChildren(<Piece data={piece}/>);
   }
+
   const navbarIconClickHandler = (id) => {
     setActiveIconId(id);
   }
-  const displayIconNavbar = () => {
-    if (width < 900) {
-      setDisplay('block')
-    } else if (width > 899) {
-      setDisplay('none')
-    }
-  }
+
 
 
   return (
+    <>
     <div className="gallery-container">
       <h2 className="type-headline">{type}</h2>
        <div style={{display: iconNavbarDisplay}} className="icon-navbar-container">
+
         { piecesArr.map((piece, i) => {
             return (
               <div key ={i} className={`small-piece-container ${activeIconId === piece.id && 'active'}`} >
@@ -66,6 +65,8 @@ const Pieces = ({setChildren, seeModal, childData, type, darkMode, styles}) => {
     )}
       </div>
     </div>
+  }
+  </>
   )
 }
 export {Pieces};

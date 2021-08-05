@@ -64,6 +64,7 @@ const ArtRepo = {
         src: drippingHair,
         title: "Hold Still and Find Out",
         medium: "Encaustic Paint, Clay, Straw",
+        price: 5000,
         canvas: "Wood",
         year: 2021,
         partials: [
@@ -75,6 +76,7 @@ const ArtRepo = {
         src: tripleBlueEncausticGallery,
         title: "Tree Reflections",
         medium: "Encaustic Paint",
+        price: 5000,
         year: 2016,
         dimensions: `4x5"/piece`,
         partials: [
@@ -86,6 +88,7 @@ const ArtRepo = {
         src: manyBranches,
         title: "Angel Tree",
         medium: "Encaustic Wax",
+        price: 5000,
         canvas: "Wood",
         year: 2017,
         dimensions: `8.5x8.5"`
@@ -95,6 +98,7 @@ const ArtRepo = {
         src: danceOfKelp,
         title: "Dance of Kelp",
         medium: "Encaustic Wax, Clay",
+        price: 5000,
         canvas: "Wood",
         year: 2020,
         dimensions: `8.5x15.5"`
@@ -104,6 +108,7 @@ const ArtRepo = {
         src: cephalopod,
         title: "Octopus Garden",
         medium: "Encaustic paint, Shellac",
+        price: 5000,
         canvas: "Wood",
         year: 2014
       },
@@ -112,6 +117,7 @@ const ArtRepo = {
         src: lotsOLotus,
         title: "Lotus Walks",
         medium: "Encaustic Wax, Chalk, Oil Paint, Spray Paint",
+        price: 5000,
         canvas: "Wood",
         year: 2010,
         dimensions: `11x16"`
@@ -121,6 +127,7 @@ const ArtRepo = {
         src: lotusLifeCycle,
         title: "Lotus Life Cycle",
         medium: "Encaustic Wax, Chalk, Oil Paint, Spray Paint",
+        price: 5000,
         canvas: "Wood",
         year: 2010,
         dimensions: `11x16"`
@@ -130,6 +137,7 @@ const ArtRepo = {
         src: shroomMoon,
         title: "Shroom Moon",
         medium: "Encaustic Wax, Clay, Water Color",
+        price: 5000,
         canvas: "Wood",
         year: 2020,
         dimensions: `6x10"`
@@ -139,6 +147,7 @@ const ArtRepo = {
         src: rooted,
         title: "Rooted",
         medium: "Encaustic Wax, Oil Paint, Clay",
+        price: 5000,
         canvas: "Wood",
         year: 2020,
         dimensions: `9.5x14"`
@@ -150,6 +159,7 @@ const ArtRepo = {
         src: whaleSky,
         title: "Whale Sky",
         medium: "Print",
+        price: 5000,
         year: 1220,
         partials: [
           { src: whaleSkyBlue }
@@ -160,6 +170,7 @@ const ArtRepo = {
         src: gopherASnuggle,
         title: "I Could Gopher A Snuggle!",
         medium: "Print",
+        price: 5000,
         year: 1220
       },
       {
@@ -167,6 +178,7 @@ const ArtRepo = {
         src: acornInHeart,
         title: "Acorn In Heart",
         medium: "Print",
+        price: 5000,
         year: 1450
       },
       {
@@ -174,6 +186,7 @@ const ArtRepo = {
         src: cagedCrow,
         title: "Caged Crow",
         medium: "Print",
+        price: 5000,
         year: 1400
       },
       {
@@ -181,6 +194,7 @@ const ArtRepo = {
         src: whereHaveYouBean,
         title: "Where Have You Bean?",
         medium: "Print",
+        price: 5000,
         year: 820
       },
       {
@@ -188,6 +202,7 @@ const ArtRepo = {
         src: youOctopi,
         title: "You Octopi My Heart",
         medium: "Print",
+        price: 5000,
         year: 2220
       },
       {
@@ -195,6 +210,7 @@ const ArtRepo = {
         src: youAreHereOrange,
         title: "You Are Here",
         medium: "Print",
+        price: 5000,
         year: 1250
       },
       {
@@ -202,6 +218,7 @@ const ArtRepo = {
         src: squidRelationship,
         title: "Squid Relationship",
         medium: "Print",
+        price: 5000,
         year: 1120
       },
       {
@@ -209,6 +226,7 @@ const ArtRepo = {
         src: bloodyStocking,
         title: "Bloody Stocking",
         medium: "Print",
+        price: 5000,
         year: 720
       },
       {
@@ -216,6 +234,7 @@ const ArtRepo = {
         src: personSittingInHeart,
         title: "Sitting In Heart",
         medium: "Print",
+        price: 5000,
         year: 1370
       },
       {
@@ -223,6 +242,7 @@ const ArtRepo = {
         src: octopusOverHeart,
         title: "Octopus Heart",
         medium: "Print",
+        price: 5000,
         year: 1920
       },
       {
@@ -230,6 +250,7 @@ const ArtRepo = {
         src: shellfishlyOrange,
         title: "Shellfishly Yours",
         medium: "Print",
+        price: 5000,
         year: 1110
       },
       {
@@ -237,6 +258,7 @@ const ArtRepo = {
         src: bunniesRedSky,
         title: "Bunnies Red Sky",
         medium: "Print",
+        price: 5000,
         year: 1436
       },
       {
@@ -244,6 +266,7 @@ const ArtRepo = {
         src: flatironPoppies,
         title: "Flatirons and Poppies",
         medium: "Encaustic Wax",
+        price: 5000,
         canvas: "Wood",
         year: 2014,
         dimensions: `11x15"`
@@ -253,6 +276,7 @@ const ArtRepo = {
         src: yellowUnderCanopy,
         title: "Ashley's Roots",
         medium: "Oil Pastels",
+        price: 5000,
         canvas: "Paper",
         year: 2013,
         dimensions: `12x18"`
@@ -262,6 +286,7 @@ const ArtRepo = {
         src: heartacheDecompartmentalized,
         title: "Fish Head",
         medium: "Print",
+        price: 5000,
         year: 2009
       },
       {
@@ -269,6 +294,7 @@ const ArtRepo = {
         src: whaleSky,
         title: "Whale Sky",
         medium: "Print",
+        price: 5000,
         year: 1220,
         partials: [
           { src: whaleSkyBlue }
@@ -279,6 +305,7 @@ const ArtRepo = {
         src: thornWrappedComfort,
         title: "Thorn-wrapped Comfort",
         medium: "Print",
+        price: 5000,
         year: 1620
       },
       {
@@ -286,6 +313,7 @@ const ArtRepo = {
         src: shipCthuluWaves,
         title: "Ship Cthulu",
         medium: "Print",
+        price: 5000,
         year: 1350
       },
       {
@@ -293,6 +321,7 @@ const ArtRepo = {
         src: snailFreedom,
         title: "Victory Snail",
         medium: "Reduction Linoleum Print",
+        price: 5000,
         canvas: "Paper",
         year: 2021,
         dimensions: `10x8.5"`
@@ -302,6 +331,7 @@ const ArtRepo = {
         src: fishyCubism,
         title: "Swirly Swirly Fish Fish",
         medium: "Linoleum Print",
+        price: 5000,
         canvas: "Paper",
         year: 2014
       },
@@ -310,6 +340,7 @@ const ArtRepo = {
         src: samuraiDogJoy,
         title: "ichibon",
         medium: "Linoleum Print",
+        price: 5000,
         canvas: "Paper",
         year: 2005,
         dimensions: `5x8"`
@@ -319,6 +350,7 @@ const ArtRepo = {
         src: kenai,
         title: "Kenai",
         medium: "linoleum print",
+        price: 5000,
         canvas: "paper",
         year: 2005
       }
@@ -329,6 +361,7 @@ const ArtRepo = {
         src: shellLayersFullHorizontal,
         title: "Shell Layers",
         medium: "Acrylic",
+        price: 5000,
         year: 50,
         partials: [
           { src: shellLayersPartial1 },
@@ -340,6 +373,7 @@ const ArtRepo = {
         src: orangeFishFull,
         title: "Orange Fish",
         medium: "Acrylic",
+        price: 5000,
         year: 80,
         partials: [
           { src: orangeFishCloseup1 },
@@ -351,6 +385,7 @@ const ArtRepo = {
         src: blueFishFull,
         title: "Blue Fish",
         medium: "Acrylic",
+        price: 5000,
         year: 100,
         partials: [
           {src: blueFishPartial}
@@ -361,6 +396,7 @@ const ArtRepo = {
         src: circleClumpTrees,
         title: "Circle Clump Trees",
         medium: "Acrylic and Discs",
+        price: 5000,
         year: 120
       },
       {
@@ -368,6 +404,7 @@ const ArtRepo = {
         src: clamDisco,
         title: "Clam Disco",
         medium: "Acrylic",
+        price: 5000,
         year: 75
       },
       {
@@ -375,6 +412,7 @@ const ArtRepo = {
         src: buddhaWithinFull,
         title: "Buddha Within",
         medium: "Acrylic",
+        price: 5000,
         year: 150,
         partials: [
           { src: buddhaWithinPartial }
@@ -385,6 +423,7 @@ const ArtRepo = {
         src: redPoppies,
         title: "Poppies Reaching",
         medium: "Encaustic Wax",
+        price: 5000,
         canvas: "Wood",
         year: 2017,
         dimensions: `11x16"`,
@@ -397,6 +436,7 @@ const ArtRepo = {
         src: mossWaterPixels,
         title: "Moss & Water Pixels",
         medium: "Acrylic",
+        price: 5000,
         year: 320,
         partials: [
           { src: mossWaterPixelsClose1 },
@@ -409,6 +449,7 @@ const ArtRepo = {
         src: lotusHeartMountain,
         title: "Golden Lotus",
         medium: "Chalk, Encaustic Wax, Oil Paint, Spray Paint",
+        price: 5000,
         canvas: "Wood",
         year: 2016,
         dimensions: `11x15"`
@@ -418,6 +459,7 @@ const ArtRepo = {
         src: blueDanTien,
         title: "Blue Girl",
         medium: "Encaustic",
+        price: 5000,
         canvas: "Wood",
         year: 2017,
         dimensions: `5x8"`
@@ -427,6 +469,7 @@ const ArtRepo = {
         src: celloDan,
         title: "Dan and Cello",
         medium: "Oil Paint",
+        price: 5000,
         canvas: "Canvas",
         year: 2013,
         dimensions: `14x20"`
@@ -436,6 +479,7 @@ const ArtRepo = {
         src: jamiesLillies,
         title: "Jamie's Lillies",
         medium: "Oil Pastels",
+        price: 5000,
         canvas: "Paper",
         year: 2010,
         dimensions: `12x18"`
