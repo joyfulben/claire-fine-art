@@ -42,7 +42,7 @@ const Piece = ({ data, seeModal }) => {
             </tr>
             <tr>
               <th>Price</th>
-              <td className="price-buy-cell">{data.price} <BuyButton onClick={() =>  handleBuyClick()}>Buy</BuyButton></td>
+              <td className="price-buy-cell">${(data.price)/100} <BuyButton onClick={() =>  handleBuyClick()}>Buy</BuyButton></td>
             </tr>
             </tbody>
           </table>
