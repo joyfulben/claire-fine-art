@@ -16,7 +16,7 @@ const Piece = ({ data, seeModal }) => {
   if (data) {
     pieceData = (
       <>
-        {stripeContainer ? <StripeContainer price={price} /> :
+        {stripeContainer ? <StripeContainer piece={data} price={price} /> :
       <div className="piece-container">
 
         <img src={data.src} alt={`${data.title} pic`} />

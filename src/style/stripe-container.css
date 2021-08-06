@@ -1,0 +1,11 @@
+.stripe-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background: rgb(126, 252, 127);
+}
+
+
+.payment-img {
+  height: 200px;
+}
