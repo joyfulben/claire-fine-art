@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import '../style/piece.css';
 import { StripeContainer } from './StripeContainer';
-
+import BuyButton from '../style/BuyButton';
 // NOTE: Breadcrumbs: App.js
 
 const Piece = ({ data, seeModal }) => {
@@ -42,7 +42,7 @@ const Piece = ({ data, seeModal }) => {
             </tr>
             <tr>
               <th>Price</th>
-              <td>{data.price} <button onClick={() =>  handleBuyClick()}>Buy</button></td>
+              <td className="price-buy-cell">{data.price} <BuyButton onClick={() =>  handleBuyClick()}>Buy</BuyButton></td>
             </tr>
             </tbody>
           </table>

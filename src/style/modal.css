@@ -37,12 +37,13 @@
 .display-none {
   display: none;
 }
+/* this modal creates an area around the modal-main div that can be clicked to exit the modal. The z-index puts this div below the modal-main. */
 .close-modal-div {
   height: 100vh;
   width: 100vw;
   z-index: 4;
 }
 .close-modal-div:hover {
-  cursor: alias; 
+  cursor: alias;
   background: rgba(31, 31, 31, 0.42);
 }

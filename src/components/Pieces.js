@@ -58,7 +58,7 @@ const Pieces = ({setChildren, seeModal, childData, type, darkMode, styles}) => {
         return (
           <div id={`${piece.id}`} key={i} className="gallery-piece" >
             <img onClick={() => handlePicClick(piece)} src={piece.src} alt={`piece ${i}`} loading="lazy" />
-            <Link  to={`/${piece.id}`}><DetailsButton onClick={() => setChildren(piece)} className="details-button">Details</DetailsButton></Link>
+            <Link  to={`/${piece.id}`}></Link>
           </div>
         );
       }

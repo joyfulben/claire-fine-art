@@ -291,17 +291,6 @@ const ArtRepo = {
       },
       {
         id: 118,
-        src: whaleSky,
-        title: "Whale Sky",
-        medium: "Print",
-        price: 5000,
-        year: 1220,
-        partials: [
-          { src: whaleSkyBlue }
-        ]
-      },
-      {
-        id: 119,
         src: thornWrappedComfort,
         title: "Thorn-wrapped Comfort",
         medium: "Print",
@@ -309,7 +298,7 @@ const ArtRepo = {
         year: 1620
       },
       {
-        id: 120,
+        id: 119,
         src: shipCthuluWaves,
         title: "Ship Cthulu",
         medium: "Print",
@@ -317,7 +306,7 @@ const ArtRepo = {
         year: 1350
       },
       {
-        id: 121,
+        id: 120,
         src: snailFreedom,
         title: "Victory Snail",
         medium: "Reduction Linoleum Print",
@@ -327,7 +316,7 @@ const ArtRepo = {
         dimensions: `10x8.5"`
       },
       {
-        id: 122,
+        id: 121,
         src: fishyCubism,
         title: "Swirly Swirly Fish Fish",
         medium: "Linoleum Print",
@@ -336,7 +325,7 @@ const ArtRepo = {
         year: 2014
       },
       {
-        id: 123,
+        id: 122,
         src: samuraiDogJoy,
         title: "ichibon",
         medium: "Linoleum Print",
@@ -346,7 +335,7 @@ const ArtRepo = {
         dimensions: `5x8"`
       },
       {
-        id: 124,
+        id: 123,
         src: kenai,
         title: "Kenai",
         medium: "linoleum print",

@@ -96,3 +96,7 @@ tbody td {
   align-items: center;
   justify-content: center;
 }
+td.price-buy-cell {
+  display: flex;
+  justify-content: space-between;
+}
