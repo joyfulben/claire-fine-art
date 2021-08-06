@@ -28,7 +28,7 @@ export default function PaymentForm(price) {
     const stripe = useStripe()
     const elements = useElements()
 
-
+    console.log(price);
     const handleSubmit = async (e) => {
         e.preventDefault()
         const {error, paymentMethod} = await stripe.createPaymentMethod({
@@ -67,11 +67,11 @@ export default function PaymentForm(price) {
                     <CardElement options={CARD_OPTIONS}/>
                 </div>
             </fieldset>
-            <button type="submit">Pay</button>
+            <button type="submit">Pay ${(price.price)/100}</button>
         </form>
         :
        <div>
-           <h2>You just bought a sweet spatula congrats this is the best decision of you're life</h2>
+           <h2>You just helped an artist continue to create beauty in this world!</h2>
        </div>
         }
 
