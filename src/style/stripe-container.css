@@ -3,6 +3,7 @@
   align-items: center;
   flex-direction: column;
   background: rgb(126, 252, 127);
+  padding: 20px;
 }
 
 .payment-img {

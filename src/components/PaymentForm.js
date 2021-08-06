@@ -1,7 +1,8 @@
-import { CardElement, useElements, useStripe } from "@stripe/react-stripe-js"
-import axios from "axios"
-import React, { useState } from 'react'
-
+import { CardElement, useElements, useStripe } from "@stripe/react-stripe-js";
+import axios from "axios";
+import React, { useState } from 'react';
+import BuyButton from '../style/BuyButton';
+import '../style/payment-form.css';
 
 const CARD_OPTIONS = {
 	iconStyle: "solid",
@@ -11,7 +12,7 @@ const CARD_OPTIONS = {
 			color: "#fff",
 			fontWeight: 500,
 			fontFamily: "Roboto, Open Sans, Segoe UI, sans-serif",
-			fontSize: "16px",
+			fontSize: "25px",
 			fontSmoothing: "antialiased",
 			":-webkit-autofill": { color: "#fce883" },
 			"::placeholder": { color: "#87bbfd" }
@@ -67,7 +68,7 @@ export default function PaymentForm(price) {
                     <CardElement options={CARD_OPTIONS}/>
                 </div>
             </fieldset>
-            <button type="submit">Pay ${(price.price)/100}</button>
+            <BuyButton type="submit">Pay ${(price.price)/100}</BuyButton>
         </form>
         :
        <div>
