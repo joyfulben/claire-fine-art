@@ -6,7 +6,7 @@ import BuyButton from '../style/BuyButton';
 
 const Piece = ({ data, seeModal }) => {
   const [stripeContainer, showStripeContainer] = useState(false)
-  const [price, setPrice] = useState(1500)
+  const [price, setPrice] = useState(data.price)
   const handleBuyClick = () => {
     showStripeContainer(true);
   }
@@ -42,7 +42,9 @@ const Piece = ({ data, seeModal }) => {
             </tr>
             <tr>
               <th>Price</th>
-              <td className="price-buy-cell">${(data.price)/100} <BuyButton onClick={() =>  handleBuyClick()}>Buy</BuyButton></td>
+              <td className="price-buy-cell">${(data.price)/100} 
+              <h4>Currently Unavailable</h4>
+              </td>
             </tr>
             </tbody>
           </table>

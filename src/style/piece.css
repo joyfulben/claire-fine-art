@@ -100,3 +100,8 @@ td.price-buy-cell {
   display: flex;
   justify-content: space-between;
 }
+td.price-buy-cell h4 {
+  margin: 0;
+  color: rgba(249, 254, 16, 0.86);
+  text-shadow: 0 0 5px grey;
+}
