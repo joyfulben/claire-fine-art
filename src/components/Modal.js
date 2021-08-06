@@ -10,7 +10,7 @@ const Modal = ({ closeModal, show, children }) => {
       <section className="modal-main">
         {children}
       </section>
-      <ClosingButton onClick={() => closeModal()}>Exit View</ClosingButton>
+      <div className="close-modal-div" onClick={() => closeModal()}></div>
     </div>
   );
 };
