@@ -25,8 +25,6 @@
 
 .modal-main img {
   width: auto;
-  max-height: 90vh;
-  max-width: 90vw;
 }
 
 .display-block {
@@ -39,11 +37,17 @@
 }
 /* this modal creates an area around the modal-main div that can be clicked to exit the modal. The z-index puts this div below the modal-main. */
 .close-modal-div {
-  height: 100vh;
+  height: 100%;
   width: 100vw;
   z-index: 4;
 }
 .close-modal-div:hover {
   cursor: alias;
   background: rgba(31, 31, 31, 0.42);
+}
+@media only screen and (max-width: 600px) {
+  .close-modal-div {
+      background: rgba(31, 31, 31, 0.42);
+      width: unset;
+  }
 }

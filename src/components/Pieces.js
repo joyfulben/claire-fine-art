@@ -23,7 +23,6 @@ const Pieces = ({setChildren, seeModal, childData, type, darkMode, styles}) => {
   const breakPoint = 1230;
   const [activeIconId, setActiveIconId] = useState(0);
   const [width, setWidth] = useState(0)
-  const [iconNavbarDisplay, setDisplay] = useState('none')
 
 
   const handlePicClick = (piece) => {
@@ -35,13 +34,17 @@ const Pieces = ({setChildren, seeModal, childData, type, darkMode, styles}) => {
     setActiveIconId(id);
   }
 
-
-
+  const windowWidth = window.innerWidth;
+  let piecesStyle = {display:'none'};
+  const setPiecesStyle = () => {
+    windowWidth > 800 ? piecesStyle = {display:'none'} : piecesStyle = {display:'block'}
+  }
+  setPiecesStyle();
   return (
     <>
     <div className="gallery-container">
       <h2 className="type-headline">{type}</h2>
-       <div style={{display: iconNavbarDisplay}} className="icon-navbar-container">
+       <div style={piecesStyle} className="icon-navbar-container">
 
         { piecesArr.map((piece, i) => {
             return (
